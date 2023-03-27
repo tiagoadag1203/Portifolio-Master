@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3c0f3a3fc8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="conteudo">
+        <div class="bloco">
+            <h1>Ola, eu sou o Tiago 👋</h1>
+            <p>Experiente em HTML,CSS e Cloud Practitioner AWS, estou sempre em busca de maior conhecimento, experiência e
+                novas habilidades.</p>
+            <div class="buttons">
+                <button onclick="sobremim()" class="btn">
+                    <span>Sobre Mim</span>
+                </button>
+                <button onclick="skills()" class="btn">
+                    <span>Skills</span>
+                </button>
+                <button onclick="experiencias()" class="btn">
+                    <span>Experiência</span>
+                </button>
+                <button onclick="contato()" class="btn">
+                    <span>Contato</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobremim">
+        <div class="voltar">
+            <button onclick="voltarsobremim()" class="btn-voltar"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+        <div class="sobremim bloco">
+            <h1>Sobre Mim</h1>
+            <img src="tiago.jpg" alt="">
+            <p>Olá, meu nome é Tiago, tenho 17 anos, atualmente entrei na faculdade cursando Ciências da Computação,
+                estou
+                sempre em busca de melhorar meus conhecimentos, melhorar meu desenpenho profissional e aprender novas
+                coisas. Sou comprometido com o que faço e sempre busco melhorar no que for preciso. Já fiz cursos de
+                HTML5 e
+                CSS3, AWS Cloud Practitioner e AWS Solutions Architect, possuindo certificado Cloud Practitioner</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="voltar">
+            <button onclick="voltarskills()" class="btn-voltar"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+        <div class="bloco">
+            <div class="soft-skill">
+                <h1>Soft Skills</h1>
+                <ul class="list-soft">
+                    <li>Comunicativo</li>
+                    <li>Trabalho em equipe</li>
+                    <li>Proativo</li>
+                    <li>Adaptabilidade</li>
+                    <li>Relacionamento interpessoal</li>
+                </ul>
+            </div>
+            <div id="linha-vertical"></div>
+            <div class="hard-skill">
+                <h1>Hard Skill</h1>
+                <div class="barras-progresso">
+                    <div id="html" class="barra">
+                        <span>HTML5</span>
+                        <div class="progressbar">
+                            <div class="progresso"></div>
+                        </div>
+                    </div>
+                    <div id="css" class="barra">
+                        <span>CSS</span>
+                        <div class="progressbar">
+                            <div class="progresso"></div>
+                        </div>
+                    </div>
+                    <div id="aws" class="barra">
+                        <span>AWS</span>
+                        <div class="progressbar">
+                            <div class="progresso"></div>
+                        </div>
+                    </div>
+                    <div id="php" class="barra">
+                        <span>PHP</span>
+                        <div class="progressbar">
+                            <div class="progresso"></div>
+                        </div>
+                    </div>
+                    <div id="java" class="barra">
+                        <span>JavaScript</span>
+                        <div class="progressbar">
+                            <div class="progresso"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencias">
+        <div class="voltar">
+            <button onclick="voltarexperiencias()" class="btn-voltar"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+        <div class="experiencia bloco">
+            <h1>Experiência</h1>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="category"> Multimidia Educacional </div>
+                    <div class="heading"> A heading that must span over two lines
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="category"> Multimidia Educacional </div>
+                    <div class="heading"> A heading that must span over two lines
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="voltar">
+            <button onclick="voltarcontato()" class="btn-voltar"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+        <div class="forms bloco">
+            <h1>Contato</h1>
+            <div class="forms">
+                <input type="text" placeholder="Nome">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <textarea name="texto" id="texto" rows="5" placeholder=""></textarea>
+            </div>
+        </div>
+    </section>
+
+    <button onclick="changeTheme()" class="bnt-flutuante">
+        <i class="fa-solid fa-palette"></i>
+    </button>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

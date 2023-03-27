@@ -1,0 +1,15 @@
+:root{
+    --bg-color: #16181E;
+    --bg-card: #252730;
+    --font-color: white;
+    --cinza-transparente: #b8b8b83a;
+    --verde-agua: cadetblue;
+    --verde-agua-transparent: rgba(95, 158, 160, 0.39);
+}
+
+.dark{
+    --bg-color: white;
+    --bg-card: #f0f0f0;
+    --font-color: #16181E;
+    --cinza-transparente: #55555560;
+}
