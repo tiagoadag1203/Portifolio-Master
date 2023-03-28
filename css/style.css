@@ -74,18 +74,33 @@ p {
     transition: 0.2s;
 }
 
+.btn-social:hover{
+    transform: scale(1.05);
+}
+
 #linkedin{
     color: var(--azul-linkedin);
+}
+
+#linkedin:hover{
+    background-color: var(--azul-linkedin);
+    color: white;
 }
 
 #curriculo{
     color: var(--verde-agua);
 }
 
-.btn-social:hover{
-    transform: scale(1.05);
-    border-color: var(--verde-agua);
+#curriculo:hover{
+    background-color: var(--verde-agua);
+    color: #fff;
 }
+
+#git:hover{
+    background-color: #000;
+    color: #fff;
+}
+
 
 
 
