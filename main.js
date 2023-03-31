@@ -39,4 +39,15 @@
 function changeTheme() {
     var element = document.documentElement;
     element.classList.toggle("dark");
+    if (element.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+}
+
+// Verifica se há um tema armazenado e aplica-o na inicialização
+if (localStorage.getItem("theme") === "dark") {
+    var element = document.documentElement;
+    element.classList.add("dark");
 }
