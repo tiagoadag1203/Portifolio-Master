@@ -17,6 +17,31 @@ function skills() {
 }
 
 
+function experiencia() {
+    var sobremim = document.getElementById("cont-experiencia");
+    if (sobremim.style.display === "flex") {
+        sobremim.style.display = "none";
+    } else {
+        sobremim.style.display = "flex";
+    }
+}
+
+function contato() {
+    var sobremim = document.getElementById("cont-contato");
+    if (sobremim.style.display === "flex") {
+        sobremim.style.display = "none";
+    } else {
+        sobremim.style.display = "flex";
+    }
+}
+
+
+
+
+
+
+
+
 
 
 function changeTheme() {
