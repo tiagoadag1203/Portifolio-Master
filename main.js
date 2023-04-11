@@ -1,37 +1,20 @@
-// function sobremim() {
-//     var conteudo = document.getElementById("conteudo");
-//     var sobremim = document.getElementById("sobremim");
+function sobremim() {
+    var sobremim = document.getElementById("cont-sobremim");
+    if (sobremim.style.display === "flex") {
+        sobremim.style.display = "none";
+    } else {
+        sobremim.style.display = "flex";
+    }
+}
 
-//     conteudo.style.display = "none";
-//     sobremim.style.display = "block";
-// }
-
-
-// function skills() {
-//     var conteudo = document.getElementById("conteudo");
-//     var skills = document.getElementById("skills");
-
-//     conteudo.style.display = "none";
-//     skills.style.display = "block";
-// }
-
-
-// function experiencias() {
-//     var conteudo = document.getElementById("conteudo");
-//     var experiencias = document.getElementById("experiencias");
-
-//     conteudo.style.display = "none";
-//     experiencias.style.display = "block";
-// }
-
-
-// function contato() {
-//     var conteudo = document.getElementById("conteudo");
-//     var contato = document.getElementById("contato");
-
-//     conteudo.style.display = "none";
-//     contato.style.display = "block";
-// }
+function skills() {
+    var sobremim = document.getElementById("cont-skills");
+    if (sobremim.style.display === "flex") {
+        sobremim.style.display = "none";
+    } else {
+        sobremim.style.display = "flex";
+    }
+}
 
 
 
