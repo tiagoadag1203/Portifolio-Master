@@ -83,7 +83,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     gap: 1rem;
 }
 
@@ -119,11 +119,25 @@ p {
     color: var(--font-color);
     font-family: 'Roboto Mono', monospace;
     transition: 0.2s;
+    font-size: 1rem;
 }
 
 .btn:hover {
     transform: scale(1.1);
     color: var(--verde-agua);
+}
+
+
+
+@media only screen and (min-device-width: 700px){
+
+    .informativo{
+        align-items: stretch;
+    }
+
+    .info{
+        max-width: 35rem;
+    }
 }
 
 
@@ -148,6 +162,13 @@ p {
     display: none;
 }
 
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 4rem;
+}
 
 /* SOFT SKILLS */
 
@@ -185,6 +206,9 @@ p {
 }
 
 .barra {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     width: 100%;
 }
 
