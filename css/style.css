@@ -120,6 +120,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .info {
+    min-width: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
