@@ -21,22 +21,53 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem 3rem;
+    padding: 1.5rem 3rem;
     gap: 2rem;
 }
 
-#conteudo p{
-    text-align: center;
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
 }
 
-.social{
+body::-webkit-scrollbar-track {
+    background: var(--bg-color);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--verde-agua);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid var(--bg-color);
+    /* creates padding around scroll thumb */
+}
+
+
+
+/* APRESENTACAO */
+
+#apresentacao {
+    margin-top: 4rem;
+}
+
+#apresentacao h1 {
+    max-width: 25rem;
+}
+
+#apresentacao p {
+    max-width: 25rem;
+}
+
+.social {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 }
 
-.btn-social{
+.btn-social {
     width: 50px;
     height: 50px;
     padding: 10px;
@@ -48,46 +79,47 @@ p {
     transition: 0.2s;
 }
 
-.btn-social:hover{
+.btn-social:hover {
     transform: scale(1.05);
 }
 
-#linkedin{
+#linkedin {
     color: var(--azul-linkedin);
 }
 
-#linkedin:hover{
+#linkedin:hover {
     background-color: var(--azul-linkedin);
     color: white;
 }
 
-#curriculo{
+#curriculo {
     color: var(--verde-agua);
 }
 
-#curriculo:hover{
+#curriculo:hover {
     background-color: var(--verde-agua);
     color: #fff;
 }
 
-#git:hover{
+#git:hover {
     background-color: #000;
     color: #fff;
 }
 
 
 
+/* CONTEUDO */
 
 
 .informativo {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     gap: 1rem;
 }
 
-.info{
+.info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,11 +130,11 @@ p {
     transition: 0.2s;
 }
 
-.info:hover{
+.info:hover {
     border-color: var(--verde-agua);
 }
 
-.cont{
+.cont {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,7 +144,7 @@ p {
 }
 
 .btn {
-    width: 150px;
+    width: 100%;
     background-color: transparent;
     border: solid transparent;
     padding: 10px 20px;
@@ -124,18 +156,17 @@ p {
 
 .btn:hover {
     transform: scale(1.1);
-    color: var(--verde-agua);
+    color: var(--verde-agua)
 }
 
 
+@media only screen and (min-device-width: 700px) {
 
-@media only screen and (min-device-width: 700px){
-
-    .informativo{
+    .informativo {
         align-items: stretch;
     }
 
-    .info{
+    .info {
         max-width: 35rem;
     }
 }
@@ -144,12 +175,12 @@ p {
 
 /* SOBRE MIM */
 
-#cont-sobremim{
+#cont-sobremim {
     display: none;
 }
 
-#cont-sobremim img{
-    width:8rem;
+#cont-sobremim img {
+    width: 8rem;
     border-radius: 10px;
 }
 
@@ -158,11 +189,11 @@ p {
 
 /* SKILLS */
 
-#cont-skills{
+#cont-skills {
     display: none;
 }
 
-.skills{
+.skills {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -251,7 +282,7 @@ p {
 
 /* EXPERIENCIA */
 
-#cont-experiencia{
+#cont-experiencia {
     display: none;
 }
 
@@ -282,7 +313,7 @@ p {
     transition: 0.2s;
 }
 
-.card-image img{
+.card-image img {
     width: 10rem;
     filter: drop-shadow(0px 0px 0.5px #fff);
 
@@ -333,18 +364,18 @@ p {
 
 /* CONTATO */
 
-#cont-contato{
+#cont-contato {
     display: none;
 }
 
-.forms{
+.forms {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1.5rem;
 }
 
-.forms input{
+.forms input {
     background-color: var(--bg-card);
     border-style: none;
     padding: 15px;
@@ -353,7 +384,7 @@ p {
     font-family: 'Roboto Mono', monospace;
 }
 
-.forms textarea{
+.forms textarea {
     background-color: var(--bg-card);
     border-style: none;
     padding: 15px;
@@ -362,12 +393,12 @@ p {
     font-family: 'Roboto Mono', monospace;
 }
 
-.forms input:focus{
+.forms input:focus {
     border: solid 2px var(--verde-agua);
     box-shadow: 0px 0px 0px 4px var(--verde-agua-transparent);
 }
 
-.forms textarea:focus{
+.forms textarea:focus {
     border: solid 2px var(--verde-agua);
     box-shadow: 0px 0px 0px 4px var(--verde-agua-transparent);
 }
@@ -397,29 +428,3 @@ p {
     font-size: 20px;
     color: var(--font-color);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
