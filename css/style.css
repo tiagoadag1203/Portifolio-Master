@@ -49,7 +49,7 @@ body::-webkit-scrollbar-thumb {
 /* APRESENTACAO */
 
 #apresentacao {
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 #apresentacao h1 {
@@ -80,7 +80,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .btn-social:hover {
-    transform: scale(1.05);
+    box-shadow: 0px 0px 0px 4px var(--verde-agua-transparent);
 }
 
 #linkedin {
@@ -115,7 +115,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 1rem;
 }
 
@@ -133,6 +133,7 @@ body::-webkit-scrollbar-thumb {
 
 .info:hover {
     border-color: var(--verde-agua);
+    box-shadow: 0px 0px 0px 4px var(--verde-agua-transparent);
 }
 
 .cont {
@@ -147,8 +148,8 @@ body::-webkit-scrollbar-thumb {
 .btn {
     width: 100%;
     background-color: transparent;
-    border: solid transparent;
-    padding: 10px 20px;
+    border: none;
+    padding: 15px 20px;
     color: var(--font-color);
     font-family: 'Roboto Mono', monospace;
     transition: 0.2s;
@@ -156,17 +157,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .btn:hover {
-    transform: scale(1.1);
     color: var(--verde-agua)
 }
 
 
 @media only screen and (min-device-width: 700px) {
-
-    .informativo {
-        align-items: stretch;
-    }
-
     .info {
         max-width: 35rem;
     }
@@ -198,7 +193,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     gap: 4rem;
 }
 
@@ -212,16 +207,13 @@ body::-webkit-scrollbar-thumb {
     gap: 1rem;
 }
 
-.list-soft {
-    list-style: disc;
-}
-
 
 
 
 /* HARD SKILLS */
 
 .hard-skill {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -230,6 +222,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .barras-progresso {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -245,7 +238,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .progressbar {
-    width: 15rem;
+    width: 100%;
     background-color: var(--bg-card);
     border-radius: 13px;
     padding: 3px;
@@ -296,7 +289,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card {
-    width: 190px;
+    width: 100%;
     height: 274px;
     background: var(--bg-card);
     padding: .4em;
@@ -362,6 +355,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+@media only screen and (min-device-width: 700px) {
+    .card {
+        width: 50%;
+    }
+}
+
+
+
 
 /* CONTATO */
 
@@ -370,13 +371,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 .forms {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 1.5rem;
 }
 
 .forms input {
+    width: 100%;
+    box-sizing: border-box;
     background-color: var(--bg-card);
     border-style: none;
     padding: 15px;
@@ -386,6 +391,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .forms textarea {
+    width: 100%;
+    box-sizing: border-box;
     background-color: var(--bg-card);
     border-style: none;
     padding: 15px;
@@ -404,6 +411,20 @@ body::-webkit-scrollbar-thumb {
     box-shadow: 0px 0px 0px 4px var(--verde-agua-transparent);
 }
 
+.btn-submit{
+    width: 50%;
+    background-color: var(--verde-agua);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Roboto Mono', monospace;
+    transition: 0.2s;
+    font-size: 1rem;
+}
+
+.btn-submit:hover{
+    box-shadow: 0px 0px 0px 4px var(--verde-agua-transparent);
+}
 
 
 
@@ -423,6 +444,7 @@ body::-webkit-scrollbar-thumb {
 
 .bnt-flutuante:hover {
     border-color: var(--verde-agua);
+    box-shadow: 0px 0px 0px 4px var(--verde-agua-transparent);
 }
 
 .bnt-flutuante svg {
