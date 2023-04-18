@@ -169,7 +169,19 @@ body::-webkit-scrollbar-thumb {
 
 
 
+
+@keyframes example {
+    from {transform: scale(0.1);}
+    to {transform: scale(1);}
+}
+
+
+
 /* SOBRE MIM */
+#sobremim{
+    animation-name: example;
+    animation-duration: 0.5s;
+}
 
 #cont-sobremim {
     display: none;
@@ -184,6 +196,10 @@ body::-webkit-scrollbar-thumb {
 
 
 /* SKILLS */
+#skills{
+    animation-name: example;
+    animation-duration: 0.7s;
+}
 
 #cont-skills {
     display: none;
@@ -275,6 +291,10 @@ body::-webkit-scrollbar-thumb {
 
 
 /* EXPERIENCIA */
+#experiencia{
+    animation-name: example;
+    animation-duration: 0.9s;
+}
 
 #cont-experiencia {
     display: none;
@@ -365,6 +385,10 @@ body::-webkit-scrollbar-thumb {
 
 
 /* CONTATO */
+#contato{
+    animation-name: example;
+    animation-duration: 1.2s;
+}
 
 #cont-contato {
     display: none;
