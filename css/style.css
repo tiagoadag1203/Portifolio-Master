@@ -156,8 +156,8 @@ body::-webkit-scrollbar-thumb {
     font-size: 1rem;
 }
 
-.btn:hover {
-    color: var(--verde-agua)
+.btn:active{
+    color: var(--verde-agua);
 }
 
 
