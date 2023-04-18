@@ -44,6 +44,10 @@ body::-webkit-scrollbar-thumb {
     /* creates padding around scroll thumb */
 }
 
+@keyframes initial-animation {
+    from {transform: scale(0.1);}
+    to {transform: scale(1);}
+}
 
 
 /* APRESENTACAO */
@@ -54,10 +58,14 @@ body::-webkit-scrollbar-thumb {
 
 #apresentacao h1 {
     max-width: 25rem;
+    animation-name: initial-animation;
+    animation-duration: 0.5s;
 }
 
 #apresentacao p {
     max-width: 25rem;
+    animation-name: initial-animation;
+    animation-duration: 0.6s;
 }
 
 .social {
@@ -65,6 +73,8 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    animation-name: initial-animation;
+    animation-duration: 0.7s;
 }
 
 .btn-social {
@@ -170,21 +180,19 @@ body::-webkit-scrollbar-thumb {
 
 
 
-@keyframes example {
-    from {transform: scale(0.1);}
-    to {transform: scale(1);}
-}
 
 
 
 /* SOBRE MIM */
 #sobremim{
-    animation-name: example;
-    animation-duration: 0.5s;
+    animation-name: initial-animation;
+    animation-duration: 0.8s;
 }
 
 #cont-sobremim {
     display: none;
+    animation-name: example;
+    animation-duration: 10s;
 }
 
 #cont-sobremim img {
@@ -197,8 +205,8 @@ body::-webkit-scrollbar-thumb {
 
 /* SKILLS */
 #skills{
-    animation-name: example;
-    animation-duration: 0.7s;
+    animation-name: initial-animation;
+    animation-duration: 0.9s;
 }
 
 #cont-skills {
@@ -292,8 +300,8 @@ body::-webkit-scrollbar-thumb {
 
 /* EXPERIENCIA */
 #experiencia{
-    animation-name: example;
-    animation-duration: 0.9s;
+    animation-name: initial-animation;
+    animation-duration: 1s;
 }
 
 #cont-experiencia {
@@ -386,8 +394,8 @@ body::-webkit-scrollbar-thumb {
 
 /* CONTATO */
 #contato{
-    animation-name: example;
-    animation-duration: 1.2s;
+    animation-name: initial-animation;
+    animation-duration: 1.1s;
 }
 
 #cont-contato {
