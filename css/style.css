@@ -13,7 +13,8 @@ h1 {
 }
 
 p {
-    text-align: justify;
+    text-align: center;
+    font-size: 1rem;
 }
 
 .bloco {
@@ -47,6 +48,16 @@ body::-webkit-scrollbar-thumb {
 @keyframes initial-animation {
     from {transform: scale(0.1);}
     to {transform: scale(1);}
+}
+
+@keyframes card {
+    from {width: 0;}
+    to {width: 8rem;}
+}
+
+@keyframes text {
+    from {font-size: 0;}
+    to {font-size: 1rem;}
 }
 
 
@@ -191,13 +202,18 @@ body::-webkit-scrollbar-thumb {
 
 #cont-sobremim {
     display: none;
-    animation-name: example;
-    animation-duration: 10s;
+}
+
+#cont-sobremim p{
+    animation-name: text;
+    animation-duration: 0.8s;
 }
 
 #cont-sobremim img {
     width: 8rem;
     border-radius: 10px;
+    animation-name: card;
+    animation-duration: 0.8s;
 }
 
 
