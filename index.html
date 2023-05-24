@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3c0f3a3fc8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/root.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="main.js"></script>
     <title>Portifólio</title>
 </head>
@@ -17,21 +17,22 @@
     <section id="apresentacao">
         <div class="bloco">
             <h1>Olá, eu sou o Tiago 👋</h1>
-            <p>Tenho experiência em HTML e CSS, e sou certificado AWS Cloud Practitioner. Busco sempre adquirir novos conhecimentos e habilidades para aprimorar minha carreira.</p>
+            <p>Tenho experiência em HTML e CSS, e sou certificado AWS Cloud Practitioner. Busco sempre adquirir novos
+                conhecimentos e habilidades para aprimorar minha carreira.</p>
             <div class="social">
-                <a href="https://www.linkedin.com/in/tiago-augusto-dal-acqua-gonçalves-44983321b/">
+                <a href="https://www.linkedin.com/in/tiago-augusto-dal-acqua-gonçalves-44983321b/" target="_blank">
                     <button class="btn-social" id="linkedin">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </button>
                 </a>
 
-                <a href="https://github.com/tiagoadag1203">
+                <a href="https://github.com/tiagoadag1203" target="_blank">
                     <button class="btn-social" id="git">
                         <i class="fa-brands fa-github"></i>
                     </button>
                 </a>
 
-                <a href="curriculo.pdf" download="Tiago Augusto">
+                <a href="curriculo.pdf" download="Tiago Augusto" target="_blank">
                     <button class="btn-social" id="curriculo">
                         <i class="fa-solid fa-file"></i>
                     </button>
@@ -44,15 +45,24 @@
         <div class="bloco">
             <div class="informativo">
 
+                <!-- SOBRE MIM -->
+
                 <div id="sobremim" class="info">
                     <button onclick="sobremim()" class="btn">
                         <span>Sobre Mim</span>
                     </button>
                     <div id="cont-sobremim" class="cont">
-                        <img src="/imgs/tiago.jpg" alt="">
-                        <p>Meu nome é Tiago e tenho 18 anos. Atualmente, iniciei minha jornada na faculdade cursando ciências da computação. Estou constantemente em busca de aprimorar meus conhecimentos, melhorar meu desempenho profissional e aprender novas habilidades. Sou dedicado e comprometido com aquilo que faço, sempre buscando me aperfeiçoar em todas as áreas necessárias. Além disso, já realizei cursos de HTML5, CSS3, AWS Cloud Practitioner e AWS Solutions Architect, obtendo o certificado Cloud Practitioner.</p>
+                        <img src="imgs/tiago.jpg" alt="">
+                        <p>Meu nome é Tiago e tenho 18 anos. Atualmente, iniciei minha jornada na faculdade cursando
+                            ciências da computação. Estou constantemente em busca de aprimorar meus conhecimentos,
+                            melhorar meu desempenho profissional e aprender novas habilidades. Sou dedicado e
+                            comprometido com aquilo que faço, sempre buscando me aperfeiçoar em todas as áreas
+                            necessárias. Além disso, já realizei cursos de HTML5, CSS3, AWS Cloud Practitioner e AWS
+                            Solutions Architect, obtendo o certificado Cloud Practitioner.</p>
                     </div>
                 </div>
+
+                <!-- SKILLS -->
 
                 <div id="skills" class="info">
                     <button onclick="skills()" class="btn">
@@ -109,33 +119,35 @@
                     </div>
                 </div>
 
+                <!-- EXPERIENCIA -->
+
                 <div id="experiencia" class="info">
                     <button onclick="experiencia()" class="btn">
                         <span>Experiência</span>
                     </button>
-                    <div id="cont-experiencia" class="cont">
-                        <div class="cards">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="/imgs/multimidia.png" alt="">
-                                </div>
-                                <div class="category"> Multimidia Educacional </div>
-                                <div class="heading">
-                                    Estagiário - 2023 até o momento
-                                </div>
+                    <div id="cont-experiencia" class="cont cards">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="imgs/multimidia.png" alt="">
                             </div>
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="/imgs/drtis.png" alt="">
-                                </div>
-                                <div class="category"> Multimidia Educacional </div>
-                                <div class="heading">
-                                    Programador Trainee - Abril até Novembro 2022
-                                </div>
+                            <div class="category"> Multimidia Educacional </div>
+                            <div class="heading">
+                                Estagiário - 2023 até o momento
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="imgs/drtis.png" alt="">
+                            </div>
+                            <div class="category"> Multimidia Educacional </div>
+                            <div class="heading">
+                                Programador Trainee - Abril até Novembro 2022
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- CONTATO -->
 
                 <div id="contato" class="info">
                     <button onclick="contato()" class="btn">
@@ -150,7 +162,6 @@
                         </form>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>

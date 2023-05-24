@@ -37,13 +37,6 @@ function contato() {
 
 
 
-
-
-
-
-
-
-
 function changeTheme() {
     var element = document.documentElement;
     element.classList.toggle("dark");
