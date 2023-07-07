@@ -1,37 +1,46 @@
 function sobremim() {
-    var sobremim = document.getElementById("cont-sobremim");
-    if (sobremim.style.display === "flex") {
-        sobremim.style.display = "none";
+    var cont = document.getElementById("cont-sobremim");
+    if (cont.style.display === "flex") {
+        cont.style.display = "none";
     } else {
-        sobremim.style.display = "flex";
+        cont.style.display = "flex";
     }
 }
 
 function skills() {
-    var sobremim = document.getElementById("cont-skills");
-    if (sobremim.style.display === "flex") {
-        sobremim.style.display = "none";
+    var cont = document.getElementById("cont-skills");
+    if (cont.style.display === "flex") {
+        cont.style.display = "none";
     } else {
-        sobremim.style.display = "flex";
+        cont.style.display = "flex";
     }
 }
 
 
 function experiencia() {
-    var sobremim = document.getElementById("cont-experiencia");
-    if (sobremim.style.display === "flex") {
-        sobremim.style.display = "none";
+    var cont = document.getElementById("cont-experiencia");
+    if (cont.style.display === "flex") {
+        cont.style.display = "none";
     } else {
-        sobremim.style.display = "flex";
+        cont.style.display = "flex";
     }
 }
 
 function contato() {
-    var sobremim = document.getElementById("cont-contato");
-    if (sobremim.style.display === "flex") {
-        sobremim.style.display = "none";
+    var cont = document.getElementById("cont-contato");
+    if (cont.style.display === "flex") {
+        cont.style.display = "none";
     } else {
-        sobremim.style.display = "flex";
+        cont.style.display = "flex";
+    }
+}
+
+function projetos() {
+    var cont = document.getElementById("cont-projetos");
+    if (cont.style.display === "flex") {
+        cont.style.display = "none";
+    } else {
+        cont.style.display = "flex";
     }
 }
 
