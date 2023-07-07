@@ -48,16 +48,16 @@ function projetos() {
 
 function changeTheme() {
     var element = document.documentElement;
-    element.classList.toggle("dark");
-    if (element.classList.contains("dark")) {
-        localStorage.setItem("theme", "dark");
-    } else {
+    element.classList.toggle("light");
+    if (element.classList.contains("light")) {
         localStorage.setItem("theme", "light");
+    } else {
+        localStorage.setItem("theme", "dark");
     }
 }
 
 // Verifica se há um tema armazenado e aplica-o na inicialização
-if (localStorage.getItem("theme") === "dark") {
+if (localStorage.getItem("theme") === "light") {
     var element = document.documentElement;
-    element.classList.add("dark");
+    element.classList.add("light");
 }

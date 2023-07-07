@@ -57,7 +57,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #apresentacao h1 {
-    max-width: 25rem;
+    max-width: 26rem;
     animation-name: initial-animation;
     animation-duration: 0.5s;
 }
