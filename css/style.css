@@ -13,7 +13,8 @@ h1 {
 }
 
 p {
-    text-align: justify;
+    text-align: center;
+    font-size: 1rem;
 }
 
 .bloco {
@@ -49,7 +50,6 @@ body::-webkit-scrollbar-thumb {
     to {transform: scale(1);}
 }
 
-
 /* APRESENTACAO */
 
 #apresentacao {
@@ -57,7 +57,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #apresentacao h1 {
-    max-width: 25rem;
+    max-width: 26rem;
     animation-name: initial-animation;
     animation-duration: 0.5s;
 }
@@ -72,7 +72,9 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    background-color: var(--bg-claro);
+    gap: rem;
+    border-radius: 1rem;
     animation-name: initial-animation;
     animation-duration: 0.7s;
 }
@@ -82,15 +84,11 @@ body::-webkit-scrollbar-thumb {
     height: 50px;
     padding: 10px;
     background-color: transparent;
-    border: 2px solid var(--cinza-transparente);
+    border: none;
     border-radius: 15px;
     color: var(--font-color);
     font-size: 20px;
     transition: 0.2s;
-}
-
-.btn-social:hover {
-    box-shadow: 0px 0px 0px 4px var(--verde-agua-transparent);
 }
 
 #linkedin {
@@ -135,7 +133,7 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
+    background-color: var();
     border: 2px solid var(--cinza-transparente);
     border-radius: 15px;
     transition: 0.2s;
@@ -191,13 +189,11 @@ body::-webkit-scrollbar-thumb {
 
 #cont-sobremim {
     display: none;
-    animation-name: example;
-    animation-duration: 10s;
 }
 
 #cont-sobremim img {
     width: 8rem;
-    border-radius: 10px;
+    border-radius: 100%;
 }
 
 
@@ -263,7 +259,7 @@ body::-webkit-scrollbar-thumb {
 
 .progressbar {
     width: 100%;
-    background-color: var(--bg-card);
+    background-color: var(--bg-claro);
     border-radius: 13px;
     padding: 3px;
 }
@@ -318,21 +314,19 @@ body::-webkit-scrollbar-thumb {
 
 .card {
     width: 100%;
-    height: 274px;
-    background: var(--bg-card);
-    padding: .4em;
+    max-width: 300px;
+    height: auto;
+    border: 2px solid var(--cinza-transparente);
     border-radius: 10px;
+    padding: .5rem;
 }
 
 .card-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
-    width: 100%;
-    height: 60%;
-    border-radius: 6px;
-    transition: 0.2s;
+    height: 150px;
+    border-radius: 8px;
 }
 
 .card-image img {
@@ -341,16 +335,13 @@ body::-webkit-scrollbar-thumb {
 
 }
 
-.card-image:hover {
-    transform: scale(0.9);
-}
-
 .category {
     text-transform: uppercase;
-    font-size: 0.7em;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--verde-agua);
     padding: 10px 7px 0;
+    text-align: left;
 }
 
 .category:hover {
@@ -367,13 +358,6 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 
-.author {
-    color: gray;
-    font-weight: 400;
-    font-size: 11px;
-    padding-top: 20px;
-}
-
 .name {
     font-weight: 600;
 }
@@ -383,19 +367,48 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-@media only screen and (min-device-width: 700px) {
-    .card {
-        width: 50%;
-    }
+
+/* PROJETOS */
+
+#projetos{
+    animation-name: initial-animation;
+    animation-duration: 1.1s;
+}
+
+#cont-projetos{
+    display: none;
+}
+
+#projetos .card-image{
+    background-image: url(/imgs/imc.png);
+    height: 150px;
+    background-position: center;
+}
+
+.links{
+    display: flex;
+    justify-content: left;
+    padding: 0.5rem 0;
+}
+
+.link-projeto{
+    background-color: transparent;
+    border: none;
+}
+
+.link-projeto svg{
+    font-size: 2rem;
+    color: var(--font-color);
 }
 
 
 
 
 /* CONTATO */
+
 #contato{
     animation-name: initial-animation;
-    animation-duration: 1.1s;
+    animation-duration: 1.2s;
 }
 
 #cont-contato {
@@ -414,7 +427,7 @@ body::-webkit-scrollbar-thumb {
 .forms input {
     width: 100%;
     box-sizing: border-box;
-    background-color: var(--bg-card);
+    background-color: var(--bg-claro);
     border-style: none;
     padding: 15px;
     border-radius: 10px;
@@ -425,7 +438,7 @@ body::-webkit-scrollbar-thumb {
 .forms textarea {
     width: 100%;
     box-sizing: border-box;
-    background-color: var(--bg-card);
+    background-color: var(--bg-claro);
     border-style: none;
     padding: 15px;
     border-radius: 10px;
@@ -466,7 +479,7 @@ body::-webkit-scrollbar-thumb {
     position: fixed;
     right: 15px;
     bottom: 20px;
-    background-color: var(--bg-card);
+    background-color: var(--bg-claro);
     border: 2px solid var(--cinza-transparente);
     border-radius: 100%;
     width: 60px;
