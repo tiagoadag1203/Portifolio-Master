@@ -134,7 +134,6 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     background-color: var(--bg-claro);
-    border: 2px solid var(--cinza-transparente);
     border-radius: 15px;
     transition: 0.2s;
 }
@@ -162,6 +161,10 @@ body::-webkit-scrollbar-thumb {
     font-family: 'Roboto Mono', monospace;
     transition: 0.2s;
     font-size: 1rem;
+}
+
+.btn:hover{
+    color: var(--verde-agua);
 }
 
 .btn:active{
@@ -480,7 +483,7 @@ body::-webkit-scrollbar-thumb {
     right: 15px;
     bottom: 20px;
     background-color: var(--bg-claro);
-    border: 2px solid var(--cinza-transparente);
+    border: none;
     border-radius: 100%;
     width: 60px;
     height: 60px;
@@ -488,7 +491,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bnt-flutuante:hover {
-    border-color: var(--verde-agua);
     box-shadow: 0px 0px 0px 4px var(--verde-agua-transparent);
 }
 
