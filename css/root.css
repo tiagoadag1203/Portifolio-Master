@@ -14,7 +14,8 @@
 .light{
     --bg: url("/imgs/background-light.png");
     --bg-color: white;
-    --bg-color-transparent: rgba(215, 214, 214, 0.42);
+    --bg-color-transparent: rgba(215, 214, 214, 0.15);
+    --bg-color-inputs: rgba(22, 24, 30, 0.09);
     --bg-claro: #f0f0f0;
     --roxo-escuro: rgb(49, 50, 122);
     --font-color: #16181E;
