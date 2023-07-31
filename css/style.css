@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
 body {
-    background: var(--bg);
-    background-size: cover;
+    background: var(--bg) center center/cover repeat;
     color: var(--font-color);
     font-family: 'Roboto Mono', monospace;
     transition: all 0.5s ease;
@@ -135,7 +134,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     background-color: var(--bg-color-transparent);
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(50px);
     border-radius: 15px;
     transition: 0.2s;
 }
