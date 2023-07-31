@@ -1,16 +1,22 @@
 :root{
+    --bg: url("/imgs/background.png");
     --bg-color: #16181E;
+    --bg-color-transparent: rgba(22, 24, 30, 0.23);
+    --bg-color-inputs: rgba(22, 24, 30, 0.34);
     --bg-claro: #252730;
     --font-color: white;
     --cinza-transparente: #b8b8b83a;
-    --verde-agua: rgb(135, 137, 231);
-    --verde-agua-transparent: rgb(119, 121, 207);
+    --roxo: rgb(116, 117, 255);
+    --roxo-escuro: rgb(116, 117, 255);
     --azul-linkedin: #0077ff;
 }
 
 .light{
+    --bg: url("/imgs/background-light.png");
     --bg-color: white;
+    --bg-color-transparent: rgba(215, 214, 214, 0.42);
     --bg-claro: #f0f0f0;
+    --roxo-escuro: rgb(49, 50, 122);
     --font-color: #16181E;
     --cinza-transparente: #55555560;
 }
