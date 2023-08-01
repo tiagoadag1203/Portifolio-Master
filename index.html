@@ -183,10 +183,12 @@
                         <span>Contato</span>
                     </button>
                     <div id="cont-contato" class="cont">
-                        <form action="https://formsubmit.co/tiago.adag@gmail.com" method="POST" class="forms">
-                            <input type="text" placeholder="Nome">
+                        <form action="https://api.staticforms.xyz/submit" method="POST" class="forms">
+                            <input type="hidden" name="accessKey" value="6b748992-b0e6-4774-a4c4-d268108e85cb">
+                            <input type="hidden" name="redirectTo" value="https://portifolio-master-one.vercel.app">
+                            <input type="text" name="name" placeholder="Nome">
                             <input type="email" name="email" id="email" placeholder="E-mail">
-                            <textarea name="texto" id="texto" rows="5" placeholder="Comentário"></textarea>
+                            <textarea name="message" id="texto" rows="5" placeholder="Comentário"></textarea>
                             <button type="submit" class="btn-submit"><span>Enviar</span></button>
                         </form>
                     </div>
