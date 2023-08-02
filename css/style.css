@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
 body {
-    background: var(--bg) center center/cover repeat;
+    background: var(--bg);
     color: var(--font-color);
     font-family: 'Roboto Mono', monospace;
     transition: all 0.5s ease;
