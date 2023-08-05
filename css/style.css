@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     background: var(--bg-color);
     color: var(--font-color);
     font-family: 'Roboto Mono', monospace;
@@ -75,7 +80,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--bg-color-transparent);
+    background-color: var(--bg-claro2);
     backdrop-filter: blur(30px);
     border-radius: 1rem;
     animation-name: initial-animation;
@@ -121,6 +126,14 @@ body::-webkit-scrollbar-thumb {
 
 /* CONTEUDO */
 
+#conteudo{
+    width: 30%;
+    background: url("/imgs/img3.svg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px 10px var(--bg-claro2);
+}
 
 .informativo {
     display: flex;
@@ -136,8 +149,8 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--bg-color-transparent);
-    backdrop-filter: blur(5px);
+    background-color: var(--bg-claro2);
+    backdrop-filter: blur(20px);
     border-radius: 15px;
     transition: 0.2s;
 }

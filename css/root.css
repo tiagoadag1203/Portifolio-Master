@@ -1,9 +1,7 @@
 :root{
-    --bg: url("/imgs/background.png");
     --bg-color: #16181E;
-    --bg-color-transparent: rgba(45, 48, 60, 0.51);
-    --bg-color-inputs: rgba(22, 24, 30, 0.34);
     --bg-claro: #252730;
+    --bg-claro2: rgba(51, 55, 66, 0.50);
     --font-color: white;
     --cinza-transparente: #b8b8b83a;
     --roxo: rgb(116, 117, 255);
@@ -14,9 +12,8 @@
 .light{
     --bg: url("/imgs/background-light.png");
     --bg-color: white;
-    --bg-color-transparent: rgb(243, 243, 243);
-    --bg-color-inputs: rgba(22, 24, 30, 0.09);
     --bg-claro: #f0f0f0;
+    --bg-claro2: rgba(229, 227, 227, 0.50);
     --roxo-escuro: rgb(61, 58, 117);
     --font-color: black;
     --cinza-transparente: #55555560;
