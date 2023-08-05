@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
 body {
-    background: var(--bg);
+    background: var(--bg-color);
     color: var(--font-color);
     font-family: 'Roboto Mono', monospace;
     transition: all 0.5s ease;
@@ -49,6 +49,9 @@ body::-webkit-scrollbar-thumb {
     from {transform: scale(0.1);}
     to {transform: scale(1);}
 }
+
+
+
 
 /* APRESENTACAO */
 
@@ -134,7 +137,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     background-color: var(--bg-color-transparent);
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(5px);
     border-radius: 15px;
     transition: 0.2s;
 }
@@ -194,10 +197,33 @@ body::-webkit-scrollbar-thumb {
     display: none;
 }
 
-#cont-sobremim img {
-    width: 8rem;
+.img-pessoal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9rem;
+    height: 9rem;
+    background: url("/imgs/tiago.jpg");
+    background-size: cover;
     border-radius: 100%;
 }
+
+.img-pessoal::before {
+    content: "";
+    position: relative;
+    width: 9.5rem;
+    height: 9.5rem;
+    border-radius: 100%;
+    background-image: url("/imgs/tiago.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px); /* O valor aqui define o nível de desfoque */
+    -webkit-filter: blur(5px); /* Necessário para o suporte em navegadores da webkit (por exemplo, Safari) */
+    z-index: -1; /* Para garantir que a camada de sobreposição fique atrás do conteúdo da div */
+}
+
+
+
 
 
 
