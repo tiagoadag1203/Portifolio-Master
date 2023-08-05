@@ -80,7 +80,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--bg-claro2);
+    background-color: var(--bg-claro);
     backdrop-filter: blur(30px);
     border-radius: 1rem;
     animation-name: initial-animation;
@@ -127,9 +127,9 @@ body::-webkit-scrollbar-thumb {
 /* CONTEUDO */
 
 #conteudo{
-    width: 30%;
+    width: 80%;
     background: url("/imgs/img3.svg");
-    background-size: 150%;
+    background-size: cover;
     background-position: center;
     border-radius: 20px;
     box-shadow: 0px 0px 0px 10px var(--bg-claro2);
@@ -150,7 +150,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     background-color: var(--bg-claro2);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     border-radius: 15px;
     transition: 0.2s;
 }
@@ -189,6 +189,10 @@ body::-webkit-scrollbar-thumb {
 
 
 @media only screen and (min-device-width: 700px) {
+    #conteudo{
+        width: 40%;
+    }
+
     .info {
         max-width: 35rem;
     }
@@ -301,7 +305,7 @@ body::-webkit-scrollbar-thumb {
 
 .progressbar {
     width: 100%;
-    background-color: var(--bg-color-inputs);
+    background-color: var(--bg-claro2);
     border-radius: 13px;
     padding: 3px;
 }
@@ -469,7 +473,7 @@ body::-webkit-scrollbar-thumb {
 .forms input {
     width: 100%;
     box-sizing: border-box;
-    background-color: var(--bg-color-inputs);
+    background-color: var(--bg-claro2);
     border-style: none;
     padding: 15px;
     border-radius: 10px;
@@ -480,7 +484,7 @@ body::-webkit-scrollbar-thumb {
 .forms textarea {
     width: 100%;
     box-sizing: border-box;
-    background-color: var(--bg-color-inputs);
+    background-color: var(--bg-claro2);
     border-style: none;
     padding: 15px;
     border-radius: 10px;
@@ -508,7 +512,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .btn-submit:hover{
-    box-shadow: 0px 0px 0px 4px var(--roxo-transparent);
+    box-shadow: 0px 0px 0px 4px var(--roxo-escuro);
 }
 
 
@@ -519,7 +523,7 @@ body::-webkit-scrollbar-thumb {
     position: fixed;
     right: 15px;
     bottom: 20px;
-    background-color: var(--bg-color-transparent);
+    background-color: var(--bg-claro);
     border: none;
     border-radius: 100%;
     width: 60px;
