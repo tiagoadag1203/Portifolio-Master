@@ -21,6 +21,21 @@
     color: blue;
 }
 
+#linkedin:hover{
+    background-color: blue;
+    color: white;
+}
+
+#git:hover{
+    background: white;
+    color: black;
+}
+
+#curriculo:hover{
+    background-color: var(--verde);
+    color: white;
+}
+
 #curriculo{
     color: var(--verde);
 }

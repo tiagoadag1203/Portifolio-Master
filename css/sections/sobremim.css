@@ -1,5 +1,6 @@
 #sobremim{
     gap: 2rem;
+    animation: myAnim 0.5s;
 }
 
 .img-pessoal{
