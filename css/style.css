@@ -1,376 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    background: var(--bg-color);
+body, html {
+    background: var(--bg);
     color: var(--font-color);
     font-family: 'Roboto Mono', monospace;
     transition: all 0.5s ease;
 }
 
-h1 {
+.titulo{
+    color: var(--font-color);
     font-size: 2rem;
     text-align: center;
 }
 
-p {
+.paragrafo{
+    font-size: 1.1rem;
     text-align: center;
-    font-size: 1rem;
+    max-width: 40rem;
 }
 
-.bloco {
+h2{
+    font-size: 1.5rem;
+}
+
+.flex{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+}
+
+.center{
     align-items: center;
-    padding: 1.5rem 3rem;
-    gap: 2rem;
-}
-
-body::-webkit-scrollbar {
-    width: 12px;
-    /* width of the entire scrollbar */
-}
-
-body::-webkit-scrollbar-track {
-    background: var(--bg-color);
-    /* color of the tracking area */
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: var(--roxo);
-    /* color of the scroll thumb */
-    border-radius: 20px;
-    /* roundness of the scroll thumb */
-    border: 3px solid var(--bg-color);
-    /* creates padding around scroll thumb */
-}
-
-@keyframes initial-animation {
-    from {transform: scale(0.1);}
-    to {transform: scale(1);}
-}
-
-
-
-
-/* APRESENTACAO */
-
-#apresentacao {
-    margin-top: 2rem;
-}
-
-#apresentacao h1 {
-    max-width: 26rem;
-    animation-name: initial-animation;
-    animation-duration: 0.5s;
-}
-
-#apresentacao p {
-    max-width: 25rem;
-    animation-name: initial-animation;
-    animation-duration: 0.6s;
-}
-
-.social {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: var(--bg-claro);
-    backdrop-filter: blur(30px);
-    border-radius: 1rem;
-    animation-name: initial-animation;
-    animation-duration: 0.7s;
 }
 
-.btn-social {
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    background-color: transparent;
-    border: none;
-    border-radius: 15px;
-    color: var(--font-color);
-    font-size: 20px;
-    transition: 0.2s;
-}
-
-#linkedin {
-    color: var(--azul-linkedin);
-}
-
-#linkedin:hover {
-    background-color: var(--azul-linkedin);
-    color: white;
-}
-
-#curriculo {
-    color: var(--roxo);
-}
-
-#curriculo:hover {
-    background-color: var(--roxo);
-    color: #fff;
-}
-
-#git:hover {
-    background-color: #000;
-    color: #fff;
-}
-
-
-
-/* CONTEUDO */
-
-#conteudo{
-    width: 80%;
-    background: url("/imgs/img3.svg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    box-shadow: 0px 0px 0px 10px var(--bg-claro2);
-}
-
-.informativo {
-    display: flex;
+.column{
     flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    gap: 1rem;
 }
 
-.info {
-    min-width: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--bg-claro2);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    transition: 0.2s;
+.row{
+    flex-direction: row;
 }
 
-.info:hover {
-    box-shadow: 0px 0px 0px 4px var(--roxo);
+.wrap{
+    flex-wrap: wrap;
 }
 
-.cont {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+.padding{
     padding: 2rem;
 }
 
-.btn {
-    width: 100%;
+.btn{
     background-color: transparent;
     border: none;
-    padding: 15px 20px;
-    color: var(--font-color);
-    font-family: 'Roboto Mono', monospace;
-    transition: 0.2s;
-    font-size: 1rem;
-}
-
-.btn:hover{
-    color: var(--roxo-escuro);
-}
-
-.btn:active{
-    color: var(--roxo-escuro);
-}
-
-
-@media only screen and (min-device-width: 700px) {
-    #conteudo{
-        width: 40%;
-    }
-
-    .info {
-        max-width: 35rem;
-    }
-}
-
-
-
-
-
-
-
-/* SOBRE MIM */
-#sobremim{
-    animation-name: initial-animation;
-    animation-duration: 0.8s;
-}
-
-#cont-sobremim {
-    display: none;
-}
-
-.img-pessoal{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 9rem;
-    height: 9rem;
-    background: url("/imgs/tiago.jpg");
-    background-size: cover;
-    border-radius: 100%;
-}
-
-.img-pessoal::before {
-    content: "";
-    position: relative;
-    width: 9.5rem;
-    height: 9.5rem;
-    border-radius: 100%;
-    background-image: url("/imgs/tiago.jpg");
-    background-size: cover;
-    background-position: center;
-    filter: blur(10px); /* O valor aqui define o nível de desfoque */
-    -webkit-filter: blur(5px); /* Necessário para o suporte em navegadores da webkit (por exemplo, Safari) */
-    z-index: -1; /* Para garantir que a camada de sobreposição fique atrás do conteúdo da div */
-}
-
-
-
-
-
-
-
-/* SKILLS */
-#skills{
-    animation-name: initial-animation;
-    animation-duration: 0.9s;
-}
-
-#cont-skills {
-    display: none;
-}
-
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-}
-
-/* SOFT SKILLS */
-
-.soft-skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-
-
-
-/* HARD SKILLS */
-
-.hard-skill {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.barras-progresso {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.barra {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 100%;
-}
-
-.progressbar {
-    width: 100%;
-    background-color: var(--bg-claro2);
-    border-radius: 13px;
-    padding: 3px;
-}
-
-.progresso {
-    background: var(--roxo);
-    height: 10px;
+    padding: 0.5rem;
     border-radius: 10px;
-}
-
-#html>div>div {
-    width: 80%;
-}
-
-#css>div>div {
-    width: 80%;
-}
-
-#aws>div>div {
-    width: 30%;
-}
-
-#php>div>div {
-    width: 20%;
-}
-
-#java>div>div {
-    width: 10%;
+    transition: 0.3s;
+    color: var(--font-color);
 }
 
 
-
-
-
-/* EXPERIENCIA */
-#experiencia{
-    animation-name: initial-animation;
-    animation-duration: 1s;
-}
-
-#cont-experiencia {
-    display: none;
-}
+/* CARDS */
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     gap: 2rem;
 }
 
 .card {
-    width: 100%;
+    background-color: var(--bg2);
     max-width: 300px;
     height: auto;
-    border: 2px solid var(--cinza-transparente);
+    border: 2px solid var(--bg3);
     border-radius: 10px;
     padding: .5rem;
 }
 
 .card-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 150px;
     border-radius: 8px;
 }
@@ -378,20 +81,15 @@ body::-webkit-scrollbar-thumb {
 .card-image img {
     width: 10rem;
     filter: drop-shadow(0px 0px 0.5px #fff);
-
 }
 
 .category {
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 600;
-    color: var(--roxo);
+    color: var(--verde);
     padding: 10px 7px 0;
     text-align: left;
-}
-
-.category:hover {
-    cursor: pointer;
 }
 
 .heading {
@@ -400,131 +98,25 @@ body::-webkit-scrollbar-thumb {
     padding: 7px;
 }
 
-.heading:hover {
-    cursor: pointer;
-}
-
 .name {
     font-weight: 600;
 }
 
-.name:hover {
-    cursor: pointer;
-}
-
-
-
-/* PROJETOS */
-
-#projetos{
-    animation-name: initial-animation;
-    animation-duration: 1.1s;
-}
-
-#cont-projetos{
+.desatived {
     display: none;
 }
 
-#projetos .card-image{
-    background-image: url(/imgs/imc.png);
-    height: 150px;
-    background-position: center;
-}
-
-.links{
+.active{
     display: flex;
-    justify-content: left;
-    padding: 0.5rem 0;
 }
 
-.link-projeto{
-    background-color: transparent;
-    border: none;
-}
-
-.link-projeto svg{
-    font-size: 2rem;
-    color: var(--font-color);
-}
-
-
-
-
-/* CONTATO */
-
-#contato{
-    animation-name: initial-animation;
-    animation-duration: 1.2s;
-}
-
-#cont-contato {
-    display: none;
-}
-
-.forms {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-}
-
-.forms input {
-    width: 100%;
-    box-sizing: border-box;
-    background-color: var(--bg-claro2);
-    border-style: none;
-    padding: 15px;
-    border-radius: 10px;
-    color: var(--font-color);
-    font-family: 'Roboto Mono', monospace;
-}
-
-.forms textarea {
-    width: 100%;
-    box-sizing: border-box;
-    background-color: var(--bg-claro2);
-    border-style: none;
-    padding: 15px;
-    border-radius: 10px;
-    color: var(--font-color);
-    font-family: 'Roboto Mono', monospace;
-}
-
-.forms input:focus {
-    box-shadow: 0px 0px 0px 4px var(--roxo);
-}
-
-.forms textarea:focus {
-    box-shadow: 0px 0px 0px 4px var(--roxo);
-}
-
-.btn-submit{
-    width: 50%;
-    background-color: var(--roxo);
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    font-family: 'Roboto Mono', monospace;
-    transition: 0.2s;
-    font-size: 1rem;
-}
-
-.btn-submit:hover{
-    box-shadow: 0px 0px 0px 4px var(--roxo-escuro);
-}
-
-
-
-/* BOTAO MUDAR TEMA */
 
 .bnt-flutuante {
     position: fixed;
     right: 15px;
     bottom: 20px;
-    background-color: var(--bg-claro);
-    border: none;
+    background-color: var(--bg2);
+    border: solid 2px var(--bg3);
     border-radius: 100%;
     width: 60px;
     height: 60px;
@@ -532,7 +124,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bnt-flutuante:hover {
-    box-shadow: 0px 0px 0px 4px var(--roxo);
+    box-shadow: 0px 0px 0px 4px var(--verde);
 }
 
 .bnt-flutuante svg {

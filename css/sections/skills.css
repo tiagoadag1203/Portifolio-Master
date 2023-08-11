@@ -1,3 +1,7 @@
+.soft-hard{
+    align-items: flex-start;
+}
+
 #soft-skill{
     gap: 2rem;
 }
@@ -17,7 +21,7 @@
 }
 
 .progressbar {
-    width: 20rem;
+    width: 12rem;
     background-color: var(--bg2);
     border-radius: 13px;
     padding: 3px;

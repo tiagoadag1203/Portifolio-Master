@@ -4,9 +4,9 @@
 
 #social{
     background-color: var(--bg2);
-    border: solid 2px var(--bg3);
+    border: solid 5px var(--bg3);
     border-radius: 20px;
-    padding: 0.5rem;
+    padding: 0.2rem;
 }
 
 #social a{
