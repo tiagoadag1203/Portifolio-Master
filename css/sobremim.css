@@ -1,0 +1,11 @@
+#sobremim{
+    gap: 2rem;
+}
+
+.img-pessoal{
+    width: 9rem;
+    height: 9rem;
+    background: url("/imgs/tiago.jpg");
+    background-size: cover;
+    border-radius: 100%;
+}

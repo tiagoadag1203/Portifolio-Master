@@ -1,0 +1,50 @@
+#soft-skill{
+    gap: 2rem;
+}
+
+#hard-skill{
+    gap: 2rem;
+}
+
+.barras-progresso {
+    width: 100%;
+    gap: 1rem;
+}
+
+.barra {
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.progressbar {
+    width: 20rem;
+    background-color: var(--bg2);
+    border-radius: 13px;
+    padding: 3px;
+}
+
+.progresso {
+    background: var(--verde);
+    height: 10px;
+    border-radius: 10px;
+}
+
+#html>div>div {
+    width: 80%;
+}
+
+#css>div>div {
+    width: 80%;
+}
+
+#aws>div>div {
+    width: 30%;
+}
+
+#php>div>div {
+    width: 20%;
+}
+
+#java>div>div {
+    width: 10%;
+}

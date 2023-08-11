@@ -1,0 +1,24 @@
+#projetos{
+    gap: 2rem;
+}
+
+.links{
+    justify-content: left;
+    padding: 0.5rem 0;
+}
+
+.link-projeto{
+    background-color: transparent;
+    border: none;
+}
+
+.link-projeto svg{
+    font-size: 2rem;
+    color: var(--font-color);
+}
+
+#projetos .card-image{
+    background-image: url(/imgs/imc.png);
+    height: 150px;
+    background-position: center;
+}
