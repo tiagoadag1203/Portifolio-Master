@@ -6,18 +6,13 @@ body, html {
     color: var(--font-color);
     font-family: 'Roboto Mono', monospace;
     transition: all 0.5s ease;
+    scroll-behavior: smooth;
 }
 
 .cont{
     background-color: var(--bg2);
     border-radius: 20px;
     margin: 2rem;
-}
-
-.titulo{
-    color: var(--font-color);
-    font-size: 2rem;
-    text-align: center;
 }
 
 .paragrafo{

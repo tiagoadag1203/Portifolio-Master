@@ -11,6 +11,7 @@
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/sections/apresentacao.css">
+    <link rel="stylesheet" href="/css/sections/conteudo.css">
     <link rel="stylesheet" href="/css/sections/menu.css">
     <link rel="stylesheet" href="/css//sections/sobremim.css">
     <link rel="stylesheet" href="/css/sections/skills.css">
@@ -22,8 +23,8 @@
 </head>
 
 <body class="flex center column">
-    <section id="apresentacao" class="padding flex center column">
-        <h1 class="titulo">Olá, eu sou o Tiago👋</h1>
+    <section id="apresentacao" class="flex center column">
+        <h1 class="titulo">Olá, eu sou o Tiago!</h1>
         <p class="paragrafo">Tenho experiência em HTML e CSS, e sou certificado AWS Cloud Practitioner. Busco sempre
             adquirir novosconhecimentos e habilidades para aprimorar minha carreira.</p>
         <div id="social">
@@ -45,138 +46,135 @@
                 </button>
             </a>
         </div>
+        <a href="#conteudo"><button id="avancar" class="btn"><i class="fa-solid fa-angles-down"></i></button></a>
     </section>
 
-    <div id="menu" class="padding flex center">
-        <div id="btns-menu" class="flex center row wrap">
-            <button class="btn btn-menu" onclick="openTab('sobremim')">Sobre Mim</button>
-            <button class="btn btn-menu" onclick="openTab('skills')">Skills</button>
-            <button class="btn btn-menu" onclick="openTab('experiencia')">Exepriência</button>
-            <button class="btn btn-menu" onclick="openTab('projetos')">Projetos</button>
-            <button class="btn btn-menu" onclick="openTab('contato')">Contato</button>
-        </div>
-    </div>
-
-    <section id="sobremim" class="padding flex center column cont desatived">
-        <h2>Sobre Mim</h2>
-        <div class="img-pessoal flex center">
-        </div>
-        <p class="paragrafo">Meu nome é Tiago e tenho 18 anos. Atualmente, iniciei minha jornada na faculdade cursando
-            ciências da computação. Estou constantemente em busca de aprimorar meus conhecimentos,
-            melhorar meu desempenho profissional e aprender novas habilidades. Sou dedicado e
-            comprometido com aquilo que faço, sempre buscando me aperfeiçoar em todas as áreas
-            necessárias. Além disso, já realizei cursos de HTML5, CSS3, AWS Cloud Practitioner e AWS
-            Solutions Architect, obtendo o certificado Cloud Practitioner.</p>
-    </section>
-
-    <section id="skills" class="padding flex center column cont desatived">
-        <h2>Skills</h2>
-        <div class="flex center wrap soft-hard">
-            <div id="soft-skill" class="flex column center padding">
-                <h2>Soft Skills</h2>
-                <ul>
-                    <li>•Comunicativo</li>
-                    <li>•Trabalho em equipe</li>
-                    <li>•Proativo</li>
-                    <li>•Adaptabilidade</li>
-                    <li>•Relacionamento interpessoal</li>
-                </ul>
-            </div>
-            <div id="hard-skill" class="flex column center padding">
-                <h2>Hard Skills</h2>
-                <div class="barras-progresso flex column center">
-                    <div id="html" class="barra flex column">
-                        <span>HTML5</span>
-                        <div class="progressbar">
-                            <div class="progresso"></div>
-                        </div>
-                    </div>
-                    <div id="css" class="barra">
-                        <span>CSS</span>
-                        <div class="progressbar">
-                            <div class="progresso"></div>
-                        </div>
-                    </div>
-                    <div id="aws" class="barra">
-                        <span>AWS</span>
-                        <div class="progressbar">
-                            <div class="progresso"></div>
-                        </div>
-                    </div>
-                    <div id="php" class="barra">
-                        <span>PHP</span>
-                        <div class="progressbar">
-                            <div class="progresso"></div>
-                        </div>
-                    </div>
-                    <div id="java" class="barra">
-                        <span>JAVASCRIPT</span>
-                        <div class="progressbar">
-                            <div class="progresso"></div>
-                        </div>
-                    </div>
-                </div>
+    <section id="conteudo">
+        <div id="menu" class="padding flex center">
+            <div id="btns-menu" class="flex center row wrap">
+                <button class="btn btn-menu" onclick="openTab('sobremim')">Sobre Mim</button>
+                <button class="btn btn-menu" onclick="openTab('skills')">Skills</button>
+                <button class="btn btn-menu" onclick="openTab('experiencia')">Exepriência</button>
+                <button class="btn btn-menu" onclick="openTab('projetos')">Projetos</button>
+                <button class="btn btn-menu" onclick="openTab('contato')">Contato</button>
             </div>
         </div>
-    </section>
-
-    <section id="experiencia" class="padding flex center column cont desatived">
-        <h2>Experiência</h2>
-        <div class="cards flex center wrap">
-            <div class="card">
-                <div class="card-image flex center">
-                    <img src="imgs/multimidia.png" alt="">
+        <section id="sobremim" class="padding flex center column cont desatived">
+            <h2>Sobre Mim</h2>
+            <div class="img-pessoal flex center">
+            </div>
+            <p class="paragrafo">Meu nome é Tiago e tenho 18 anos. Atualmente, iniciei minha jornada na faculdade cursando
+                ciências da computação. Estou constantemente em busca de aprimorar meus conhecimentos,
+                melhorar meu desempenho profissional e aprender novas habilidades. Sou dedicado e
+                comprometido com aquilo que faço, sempre buscando me aperfeiçoar em todas as áreas
+                necessárias. Além disso, já realizei cursos de HTML5, CSS3, AWS Cloud Practitioner e AWS
+                Solutions Architect, obtendo o certificado Cloud Practitioner.</p>
+        </section>
+        <section id="skills" class="padding flex center column cont desatived">
+            <h2>Skills</h2>
+            <div class="flex center wrap soft-hard">
+                <div id="soft-skill" class="flex column center padding">
+                    <h2>Soft Skills</h2>
+                    <ul>
+                        <li>•Comunicativo</li>
+                        <li>•Trabalho em equipe</li>
+                        <li>•Proativo</li>
+                        <li>•Adaptabilidade</li>
+                        <li>•Relacionamento interpessoal</li>
+                    </ul>
                 </div>
-                <div class="category"> Multimidia Educacional </div>
-                <div class="heading">
-                    Estagiário - 2023 até o momento
+                <div id="hard-skill" class="flex column center padding">
+                    <h2>Hard Skills</h2>
+                    <div class="barras-progresso flex column center">
+                        <div id="html" class="barra flex column">
+                            <span>HTML5</span>
+                            <div class="progressbar">
+                                <div class="progresso"></div>
+                            </div>
+                        </div>
+                        <div id="css" class="barra">
+                            <span>CSS</span>
+                            <div class="progressbar">
+                                <div class="progresso"></div>
+                            </div>
+                        </div>
+                        <div id="aws" class="barra">
+                            <span>AWS</span>
+                            <div class="progressbar">
+                                <div class="progresso"></div>
+                            </div>
+                        </div>
+                        <div id="php" class="barra">
+                            <span>PHP</span>
+                            <div class="progressbar">
+                                <div class="progresso"></div>
+                            </div>
+                        </div>
+                        <div id="java" class="barra">
+                            <span>JAVASCRIPT</span>
+                            <div class="progressbar">
+                                <div class="progresso"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-image flex center">
-                    <img src="imgs/drtis.png" alt="">
+        </section>
+        <section id="experiencia" class="padding flex center column cont desatived">
+            <h2>Experiência</h2>
+            <div class="cards flex center wrap">
+                <div class="card">
+                    <div class="card-image flex center">
+                        <img src="imgs/multimidia.png" alt="">
+                    </div>
+                    <div class="category"> Multimidia Educacional </div>
+                    <div class="heading">
+                        Estagiário - 2023 até o momento
+                    </div>
                 </div>
-                <div class="category"> Dr.Tis </div>
-                <div class="heading">
-                    Programador Trainee - Abril até Novembro 2022
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projetos" class="padding flex center column cont desatived">
-        <h2>Projetos</h2>
-        <div class="cards">
-            <div class="card">
-                <div class="card-image flex center">
-                </div>
-                <div class="category"> Calculadora IMC </div>
-                <div class="heading">
-                    Uma simples calculadora feita com PHP e HTML para calcular o IMC.
-                </div>
-                <div class="links flex">
-                    <a href="https://github.com/tiagoadag1203/Calculadora_imc" target="_blank">
-                        <button class="link-projeto">
-                            <i class="fa-brands fa-github"></i>
-                        </button>
-                    </a>
+                <div class="card">
+                    <div class="card-image flex center">
+                        <img src="imgs/drtis.png" alt="">
+                    </div>
+                    <div class="category"> Dr.Tis </div>
+                    <div class="heading">
+                        Programador Trainee - Abril até Novembro 2022
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section id="projetos" class="padding flex center column cont desatived">
+            <h2>Projetos</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-image flex center">
+                    </div>
+                    <div class="category"> Calculadora IMC </div>
+                    <div class="heading">
+                        Uma simples calculadora feita com PHP e HTML para calcular o IMC.
+                    </div>
+                    <div class="links flex">
+                        <a href="https://github.com/tiagoadag1203/Calculadora_imc" target="_blank">
+                            <button class="link-projeto">
+                                <i class="fa-brands fa-github"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="padding flex center column cont desatived">
+            <h2>Contato</h2>
+            <form action="https://api.staticforms.xyz/submit" method="POST" class="forms flex center column">
+                <input type="hidden" name="accessKey" value="6b748992-b0e6-4774-a4c4-d268108e85cb">
+                <input type="hidden" name="redirectTo" value="https://portifolio-master-one.vercel.app">
+                <input type="text" name="name" placeholder="Nome">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <textarea name="message" id="texto" rows="5" placeholder="Comentário"></textarea>
+                <button type="submit" class="btn-submit"><span>Enviar</span></button>
+            </form>
+        </section>
     </section>
-
-    <section id="contato" class="padding flex center column cont desatived">
-        <h2>Contato</h2>
-        <form action="https://api.staticforms.xyz/submit" method="POST" class="forms flex center column">
-            <input type="hidden" name="accessKey" value="6b748992-b0e6-4774-a4c4-d268108e85cb">
-            <input type="hidden" name="redirectTo" value="https://portifolio-master-one.vercel.app">
-            <input type="text" name="name" placeholder="Nome">
-            <input type="email" name="email" id="email" placeholder="E-mail">
-            <textarea name="message" id="texto" rows="5" placeholder="Comentário"></textarea>
-            <button type="submit" class="btn-submit"><span>Enviar</span></button>
-        </form>
-    </section>
-
 
     <button onclick="changeTheme()" class="bnt-flutuante">
         <i class="fa-solid fa-circle-half-stroke"></i>
