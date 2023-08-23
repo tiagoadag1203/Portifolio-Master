@@ -1,9 +1,10 @@
 #skills{
     animation: myAnim 0.5s;
+    gap: 2rem;
 }
 
 .soft-hard{
-    align-items: flex-start;
+    gap: 2rem;
 }
 
 #soft-skill{
@@ -11,6 +12,7 @@
 }
 
 #hard-skill{
+    width: 100%;
     gap: 2rem;
 }
 
@@ -25,7 +27,7 @@
 }
 
 .progressbar {
-    width: 12rem;
+    width: 100%;
     background-color: var(--bg3);
     border-radius: 13px;
     padding: 3px;
