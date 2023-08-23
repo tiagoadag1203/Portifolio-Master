@@ -2,29 +2,28 @@
     min-height: 100vh;
     background: url(/imgs/background.png);
     background-size: cover;
-    gap: 5rem;
+    background-position: center;
+    gap: 1.5rem;
 }
 
 .titulo{
-    color: white;
-    font-size: 5rem;
+    color: var(--font-color);
+    font-size: 4rem;
     text-align: center;
-    filter: opacity(70%);
+    filter: opacity(60%);
 }
 
 #apresentacao>.paragrafo{
-    color: white;
     font-size: 1.5rem;
     text-align: center;
     filter: opacity(70%);
 }
 
 #social{
-    background-color: rgba(255, 255, 255, 0.5);
-    border: solid 5px #e0e0e077;
+    background-color: var(--bg2);
+    border: solid 5px var(--bg3);
     border-radius: 20px;
     padding: 0.2rem;
-    backdrop-filter: blur(50px);
 }
 
 #social a{
@@ -65,6 +64,6 @@
 
 @media (min-width: 950px){
     #apresentacao{
-        min-width: 95%;
+        min-width: 100%;
     }
 }
