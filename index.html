@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/imgs/logo.svg">
     <script src="https://kit.fontawesome.com/3c0f3a3fc8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/root.css">
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="/css/sections/experiencia.css">
     <link rel="stylesheet" href="/css/sections/projetos.css">
     <link rel="stylesheet" href="/css/sections/contato.css">
+    <link rel="stylesheet" href="/css/sections/rodape.css">
     <script src="main.js"></script>
     <title>Portifólio</title>
 </head>
@@ -26,7 +28,7 @@
     <section id="apresentacao" class="padding flex center column">
         <h1 class="titulo">Olá, eu sou o Tiago!</h1>
         <p class="paragrafo">Tenho experiência em HTML e CSS, e sou certificado AWS Cloud Practitioner. Busco sempre
-            adquirir novosconhecimentos e habilidades para aprimorar minha carreira.</p>
+            adquirir novos conhecimentos e habilidades para aprimorar minha carreira.</p>
         <div id="social">
             <a href="https://www.linkedin.com/in/tiago-augusto-dal-acqua-gonçalves-44983321b/" target="_blank">
                 <button class="btn" id="linkedin">
@@ -52,14 +54,14 @@
     <section id="conteudo">
         <div id="menu" class="padding flex center">
             <div id="btns-menu" class="flex center row wrap">
-                <button class="btn btn-menu" onclick="openTab('sobremim')">Sobre Mim</button>
+                <button class="btn btn-menu ativo" onclick="openTab('sobremim')">Sobre Mim</button>
                 <button class="btn btn-menu" onclick="openTab('skills')">Skills</button>
                 <button class="btn btn-menu" onclick="openTab('experiencia')">Exepriência</button>
                 <button class="btn btn-menu" onclick="openTab('projetos')">Projetos</button>
                 <button class="btn btn-menu" onclick="openTab('contato')">Contato</button>
             </div>
         </div>
-        <section id="sobremim" class="padding flex center column cont desatived">
+        <section id="sobremim" class="padding flex center column cont desatived active">
             <h2>Sobre Mim</h2>
             <div class="img-pessoal flex center">
             </div>
@@ -145,13 +147,28 @@
         </section>
         <section id="projetos" class="padding flex center column cont desatived">
             <h2>Projetos</h2>
-            <div class="cards">
-                <div class="card">
+            <div class="cards flex center wrap">
+                <div id="imc" class="card">
                     <div class="card-image flex center">
                     </div>
                     <div class="category"> Calculadora IMC </div>
                     <div class="heading">
                         Uma simples calculadora feita com PHP e HTML para calcular o IMC.
+                    </div>
+                    <div class="links flex">
+                        <a href="https://github.com/tiagoadag1203/Calculadora_imc" target="_blank">
+                            <button class="link-projeto">
+                                <i class="fa-brands fa-github"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div id="portifolio" class="card">
+                    <div class="card-image flex center">
+                    </div>
+                    <div class="category"> Este Porjeto </div>
+                    <div class="heading">
+                        Portifolio pessoal, com intuito de ser simples e objetivo.
                     </div>
                     <div class="links flex">
                         <a href="https://github.com/tiagoadag1203/Calculadora_imc" target="_blank">
@@ -175,6 +192,11 @@
             </form>
         </section>
     </section>
+
+    <footer id="rodape" class="flex column center padding">
+        <p class="texto-rodape">tiago.adag@gmail.com</p>
+        <img src="/imgs/logo2.svg" alt="" id="img-rodape">
+    </footer>
 
     <button onclick="changeTheme()" class="bnt-flutuante">
         <i class="fa-solid fa-circle-half-stroke"></i>

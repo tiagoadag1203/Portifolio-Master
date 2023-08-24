@@ -19,7 +19,14 @@
 }
 
 #projetos .card-image{
-    background-image: url(/imgs/imc.png);
-    height: 150px;
     background-position: center;
+    background-size: cover;
+}
+
+#imc .card-image{
+    background-image: url(/imgs/imc.png);
+}
+
+#portifolio .card-image{
+    background-image: url(/imgs/portifolio.png);
 }

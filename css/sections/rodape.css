@@ -1,0 +1,12 @@
+#rodape{
+    gap: 1rem;
+}
+
+.texto-rodape{
+    color: #5c5c5c;
+    font-size: 0.7rem;
+}
+
+#img-rodape{
+    width: 1rem;
+}

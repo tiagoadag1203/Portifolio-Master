@@ -3,9 +3,10 @@
     --bg2: #EBEBEB;
     --bg3: #E0E0E0;
     --bg-transparent: #ffffff7a;
+    --bg-transparent2: #d8d7d77a;
     --font-color: black;
     --border: #66666683;
-    --verde: #8400ff;
+    --verde: #9b31ff;
     --sombra: rgba(0, 0, 0, 0.479);
 }
 
@@ -14,6 +15,7 @@
     --bg2: #1f1f1f;
     --bg3: #292929;
     --bg-transparent: #0000007a;
+    --bg-transparent2: #2727277a;
     --font-color: white;
     --border:#ffffff83;
     --verde: #8400ff;
