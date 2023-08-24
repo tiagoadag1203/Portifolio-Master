@@ -30,16 +30,16 @@
 }
 
 .forms input:focus {
-    box-shadow: 0px 0px 0px 4px var(--verde);
+    box-shadow: 0px 0px 0px 4px var(--roxo);
 }
 
 .forms textarea:focus {
-    box-shadow: 0px 0px 0px 4px var(--verde);
+    box-shadow: 0px 0px 0px 4px var(--roxo);
 }
 
 .btn-submit{
     width: 50%;
-    background-color: var(--verde);
+    background-color: var(--roxo);
     padding: 10px;
     border: none;
     border-radius: 10px;

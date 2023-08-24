@@ -6,7 +6,7 @@
     --bg-transparent2: #d8d7d77a;
     --font-color: black;
     --border: #66666683;
-    --verde: #9b31ff;
+    --roxo: #9b31ff;
     --sombra: rgba(0, 0, 0, 0.479);
 }
 
@@ -18,6 +18,6 @@
     --bg-transparent2: #2727277a;
     --font-color: white;
     --border:#ffffff83;
-    --verde: #8400ff;
+    --roxo: #8400ff;
     --sombra: rgba(255, 255, 255, 0.603);
 }

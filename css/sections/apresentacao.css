@@ -1,6 +1,6 @@
 #apresentacao{
     min-height: 100vh;
-    background: url(/imgs/background.png);
+    background-image: radial-gradient(circle,var(--roxo), var(--bg));
     background-size: cover;
     background-position: center;
     gap: 2rem;
@@ -49,12 +49,12 @@
 }
 
 #curriculo:hover{
-    background-color: var(--verde);
+    background-color: var(--roxo);
     color: white;
 }
 
 #curriculo{
-    color: var(--verde);
+    color: var(--roxo);
 }
 
 #avancar{

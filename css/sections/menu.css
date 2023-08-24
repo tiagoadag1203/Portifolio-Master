@@ -7,9 +7,9 @@
 }
 
 #btns-menu .btn:hover{
-    background-color: var(--verde);
+    background-color: var(--roxo);
 }
 
 .ativo{
-    background-color: var(--verde);
+    background-color: var(--roxo);
 }

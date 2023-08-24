@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
-body, html {
+body,
+html {
     min-height: 100vh;
     background: var(--bg);
     color: var(--font-color);
@@ -9,48 +10,69 @@ body, html {
     scroll-behavior: smooth;
 }
 
-.cont{
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: var(--roxo) var(--bg);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--roxo);
+    border-radius: 10px;
+}
+
+.cont {
     background-color: var(--bg2);
     border-radius: 20px;
     margin: 2rem;
 }
 
-.paragrafo{
+.paragrafo {
     font-size: 1.1rem;
     text-align: center;
     max-width: 40rem;
 }
 
-h2{
+h2 {
     font-size: 1.5rem;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.center{
+.center {
     align-items: center;
     justify-content: center;
 }
 
-.column{
+.column {
     flex-direction: column;
 }
 
-.row{
+.row {
     flex-direction: row;
 }
 
-.wrap{
+.wrap {
     flex-wrap: wrap;
 }
 
-.padding{
+.padding {
     padding: 2rem;
 }
 
-.btn{
+.btn {
     background-color: transparent;
     border: none;
     padding: 0.5rem;
@@ -89,7 +111,7 @@ h2{
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 600;
-    color: var(--verde);
+    color: var(--roxo);
     padding: 10px 7px 0;
     text-align: left;
 }
@@ -108,7 +130,7 @@ h2{
     display: none;
 }
 
-.active{
+.active {
     display: flex;
 }
 
@@ -126,7 +148,7 @@ h2{
 }
 
 .bnt-flutuante:hover {
-    box-shadow: 0px 0px 0px 4px var(--verde);
+    box-shadow: 0px 0px 0px 4px var(--roxo);
 }
 
 .bnt-flutuante svg {
@@ -139,12 +161,12 @@ h2{
 
 
 @keyframes myAnim {
-	0% {
-		opacity: 0;
-		transform: translateY(-45px);
-	}
+    0% {
+        opacity: 0;
+        transform: translateY(-45px);
+    }
 
-	100% {
-		opacity: 1;
-	}
+    100% {
+        opacity: 1;
+    }
 }
