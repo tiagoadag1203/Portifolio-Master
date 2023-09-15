@@ -13,6 +13,7 @@
 
 #hard-skill{
     width: 100%;
+    max-width: 300px;
     gap: 2rem;
 }
 

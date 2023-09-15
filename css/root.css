@@ -4,20 +4,32 @@
     --bg3: #E0E0E0;
     --bg-transparent: #ffffff7a;
     --bg-transparent2: #d8d7d77a;
-    --font-color: black;
+    --font-color: rgb(92, 92, 92);
     --border: #66666683;
-    --roxo: #9b31ff;
+    --roxo: #8198ff;
     --sombra: rgba(0, 0, 0, 0.479);
 }
 
-.dark{
+/* .dark{
     --bg: #000000;
     --bg2: #1f1f1f;
     --bg3: #292929;
     --bg-transparent: #0000007a;
     --bg-transparent2: #2727277a;
-    --font-color: white;
+    --font-color: rgb(170, 170, 170);
     --border:#ffffff83;
-    --roxo: #8400ff;
+    --roxo: #8198ff;
     --sombra: rgba(255, 255, 255, 0.603);
+} */
+
+.dark{
+    --bg: #191922;
+    --bg2: #282838;
+    --bg3: #333347;
+    --bg-transparent: #ffffff7a;
+    --bg-transparent2: #d8d7d77a;
+    --font-color: rgb(211, 211, 211);
+    --border: #66666683;
+    --roxo: #8198ff;
+    --sombra: rgba(0, 0, 0, 0.479);
 }

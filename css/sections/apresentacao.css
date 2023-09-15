@@ -1,28 +1,18 @@
 #apresentacao{
-    min-height: 100vh;
-    background-image: radial-gradient(circle,var(--roxo), var(--bg));
-    background-size: cover;
-    background-position: center;
-    gap: 2rem;
+    gap: 3rem;
+    animation: myAnim 0.5s
 }
 
 .titulo{
     color: var(--font-color);
     font-size: 3rem;
     text-align: center;
-    filter: opacity(60%);
-}
-
-#apresentacao>.paragrafo{
-    font-size: 1rem;
-    text-align: center;
-    filter: opacity(70%);
 }
 
 #social{
-    background-color: var(--bg-transparent);
-    border: solid 5px var(--bg-transparent2);
-    border-radius: 20px;
+    background-color: var(--bg2);
+    border: solid 5px var(--bg3);
+    border-radius: 25px;
     padding: 0.2rem;
 }
 
@@ -30,16 +20,22 @@
     text-decoration: none;
 }
 
+#social button{
+    width: 40px;
+    height: 40px;
+    border-radius: 17px;
+}
+
 .icon{
     font-size: 1.2rem;
 }
 
 #linkedin{
-    color: blue;
+    color: #4441ff;
 }
 
 #linkedin:hover{
-    background-color: blue;
+    background-color: #4441ff;
     color: white;
 }
 
@@ -63,10 +59,6 @@
 }
 
 @media (min-width: 700px){
-    #apresentacao{
-        min-width: 95%;
-    }
-
     .titulo{
         font-size: 4rem;
     }

@@ -1,15 +1,42 @@
-#btns-menu{
+#btns-menu {
     background-color: var(--bg2);
-    border: solid 5px var(--bg3);
-    border-radius: 20px;
+    border: 4px solid var(--bg3);
+    border-radius: 25px;
     padding: 0.5rem;
-    gap: 0.5rem;
+    gap: 0.2rem;
 }
 
-#btns-menu .btn:hover{
+.btn-menu {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    border-radius: 14px;
+}
+
+.btn-menu span {
+    visibility: hidden;
+}
+
+.btn-menu:hover {
+    color: white;
     background-color: var(--roxo);
 }
 
-.ativo{
+.ativo {
+    color: white;
     background-color: var(--roxo);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 600px) {
+
+    .btn-menu {
+        width: auto;
+        height: auto;
+        font-size: 1rem;
+    }
+
+    .btn-menu span {
+        visibility: visible;
+    }
 }

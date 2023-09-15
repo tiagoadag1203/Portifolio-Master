@@ -13,7 +13,7 @@
     background-color: var(--bg3);
     border-style: none;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 15px;
     color: var(--font-color);
     font-family: 'Roboto Mono', monospace;
 }
@@ -24,7 +24,7 @@
     background-color: var(--bg3);
     border-style: none;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 15px;
     color: var(--font-color);
     font-family: 'Roboto Mono', monospace;
 }
@@ -39,15 +39,17 @@
 
 .btn-submit{
     width: 50%;
-    background-color: var(--roxo);
+    background-color: var(--bg3);
     padding: 10px;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     font-family: 'Roboto Mono', monospace;
     transition: 0.2s;
     font-size: 1rem;
+    color: var(--font-color);
 }
 
 .btn-submit:hover{
-    transform: scale(1.1);
+    background-color: var(--roxo);
+    color: white;
 }

@@ -25,43 +25,51 @@
 </head>
 
 <body class="flex center column">
-    <section id="apresentacao" class="padding flex center column">
-        <h1 class="titulo">Olá, eu sou o Tiago!</h1>
-        <p class="paragrafo">Tenho experiência em HTML e CSS, e sou certificado AWS Cloud Practitioner. Busco sempre
-            adquirir novos conhecimentos e habilidades para aprimorar minha carreira.</p>
-        <div id="social">
-            <a href="https://www.linkedin.com/in/tiago-augusto-dal-acqua-gonçalves-44983321b/" target="_blank">
-                <button class="btn" id="linkedin">
-                    <i class="fa-brands fa-linkedin-in icon"></i>
-                </button>
-            </a>
-
-            <a href="https://github.com/tiagoadag1203" target="_blank">
-                <button class="btn" id="git">
-                    <i class="fa-brands fa-github icon"></i>
-                </button>
-            </a>
-
-            <a href="curriculo.pdf" download="Tiago Augusto" target="_blank">
-                <button class="btn" id="curriculo">
-                    <i class="fa-solid fa-file icon"></i>
-                </button>
-            </a>
-        </div>
-        <a href="#conteudo"><button id="avancar" class="btn"><i class="fa-solid fa-angles-down"></i></button></a>
-    </section>
-
-    <section id="conteudo">
-        <div id="menu" class="padding flex center">
+    <header>
+        <div id="menu" class="flex center padding">
             <div id="btns-menu" class="flex center row wrap">
-                <button class="btn btn-menu ativo" onclick="openTab('sobremim')">Sobre Mim</button>
-                <button class="btn btn-menu" onclick="openTab('skills')">Skills</button>
-                <button class="btn btn-menu" onclick="openTab('experiencia')">Exepriência</button>
-                <button class="btn btn-menu" onclick="openTab('projetos')">Projetos</button>
-                <button class="btn btn-menu" onclick="openTab('contato')">Contato</button>
+                <button class="btn btn-menu ativo" onclick="openTab('apresentacao')"><i class="fa-solid fa-house"></i><span> Home</span></button>
+                <button class="btn btn-menu" onclick="openTab('sobremim')"><i class="fa-solid fa-user"></i> <span> Sobre Mim</span></button>
+                <button class="btn btn-menu" onclick="openTab('skills')"><i class="fa-solid fa-laptop-code"></i><span> Skills</span></button>
+                <button class="btn btn-menu" onclick="openTab('experiencia')"><i class="fa-solid fa-briefcase"></i><span> Exepriência</span></button>
+                <button class="btn btn-menu" onclick="openTab('projetos')"><i class="fa-regular fa-folder-open"></i><span> Projetos</span></button>
+                <button class="btn btn-menu" onclick="openTab('contato')"><i class="fa-solid fa-envelope"></i> <span> Contato</span></button>
             </div>
         </div>
-        <section id="sobremim" class="padding flex center column cont desatived active">
+    </header>
+
+    
+    <section id="conteudo" class="">
+
+        <!-- APRESENTAÇÃO -->
+
+        <section id="apresentacao" class="padding flex center column desatived active">
+            <h1 class="titulo">Olá, eu sou o Tiago!</h1>
+            <p class="paragrafo">Tenho experiência em HTML e CSS, e sou certificado AWS Cloud Practitioner. Busco sempre
+                adquirir novos conhecimentos e habilidades para aprimorar minha carreira.</p>
+            <div id="social">
+                <a href="https://www.linkedin.com/in/tiago-augusto-dal-acqua-gonçalves-44983321b/">
+                    <button class="btn" id="linkedin">
+                        <i class="fa-brands fa-linkedin-in icon"></i>
+                    </button>
+                </a>
+                <a href="https://github.com/tiagoadag1203">
+                    <button class="btn" id="git">
+                        <i class="fa-brands fa-github icon"></i>
+                    </button>
+                </a>
+                <a href="curriculo.pdf" download="Tiago Augusto">
+                    <button class="btn" id="curriculo">
+                        <i class="fa-solid fa-file icon"></i>
+                    </button>
+                </a>
+            </div>
+        </section>
+
+
+        <!-- SOBRE MIM -->
+
+        <section id="sobremim" class="padding flex center column cont desatived">
             <h2>Sobre Mim</h2>
             <div class="img-pessoal flex center">
             </div>
@@ -72,6 +80,10 @@
                 necessárias. Além disso, já realizei cursos de HTML5, CSS3, AWS Cloud Practitioner e AWS
                 Solutions Architect, obtendo o certificado Cloud Practitioner.</p>
         </section>
+
+
+        <!-- SKILLS -->
+
         <section id="skills" class="padding flex center column cont desatived">
             <h2>Skills</h2>
             <div class="flex center column soft-hard">
@@ -122,6 +134,9 @@
                 </div>
             </div>
         </section>
+
+        <!-- EXPERIENCIA -->
+
         <section id="experiencia" class="padding flex center column cont desatived">
             <h2>Experiência</h2>
             <div class="cards flex center wrap">
@@ -145,6 +160,9 @@
                 </div>
             </div>
         </section>
+
+        <!-- PROJETOS -->
+        
         <section id="projetos" class="padding flex center column cont desatived">
             <h2>Projetos</h2>
             <div class="cards flex center wrap">
