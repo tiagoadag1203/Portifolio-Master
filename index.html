@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/imgs/logo.svg">
     <script src="https://kit.fontawesome.com/3c0f3a3fc8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -23,22 +25,20 @@
     <title>Portifólio</title>
 </head>
 
-<body id="particles-js" class="flex center column">
-    <header>
-        <div id="menu" class="flex center padding">
-            <div id="btns-menu" class="flex center row wrap">
-                <button class="btn btn-menu ativo" onclick="openTab('apresentacao')"><i class="fa-solid fa-house"></i><span> Home</span></button>
-                <button class="btn btn-menu" onclick="openTab('sobremim')"><i class="fa-solid fa-user"></i> <span> Sobre Mim</span></button>
-                <button class="btn btn-menu" onclick="openTab('skills')"><i class="fa-solid fa-laptop-code"></i><span> Skills</span></button>
-                <button class="btn btn-menu" onclick="openTab('experiencia')"><i class="fa-solid fa-briefcase"></i><span> Exepriência</span></button>
-                <button class="btn btn-menu" onclick="openTab('projetos')"><i class="fa-regular fa-folder-open"></i><span> Projetos</span></button>
-                <button class="btn btn-menu" onclick="openTab('contato')"><i class="fa-solid fa-envelope"></i> <span> Contato</span></button>
-            </div>
+<body class="">
+    <header id="navbar" class="flex center padding">
+        <div id="btns-menu" class="flex center row wrap">
+            <button class="btn btn-menu" onclick="openTab('apresentacao')"><i class="fa-solid fa-house"></i><span> Home</span></button>
+            <button class="btn btn-menu" onclick="openTab('sobremim')"><i class="fa-solid fa-user"></i><span> Sobre Mim</span></button>
+            <button class="btn btn-menu" onclick="openTab('skills')"><i class="fa-solid fa-laptop-code"></i><span> Skills</span></button>
+            <button class="btn btn-menu" onclick="openTab('experiencia')"><i class="fa-solid fa-briefcase"></i><span> Exepriência</span></button>
+            <button class="btn btn-menu" onclick="openTab('projetos')"><i class="fa-regular fa-folder-open"></i><span> Projetos</span></button>
+            <button class="btn btn-menu" onclick="openTab('contato')"><i class="fa-solid fa-envelope"></i> <span> Contato</span></button>
         </div>
     </header>
 
-    
-    <section id="conteudo" class="">
+
+    <section id="conteudo" class="flex center column">
 
         <!-- APRESENTAÇÃO -->
 
@@ -47,17 +47,17 @@
             <p class="paragrafo">Tenho experiência em HTML e CSS, e sou certificado AWS Cloud Practitioner. Busco sempre
                 adquirir novos conhecimentos e habilidades para aprimorar minha carreira.</p>
             <div id="social">
-                <a href="https://www.linkedin.com/in/tiago-augusto-dal-acqua-gonçalves-44983321b/">
+                <a href="https://www.linkedin.com/in/tiago-augusto-dal-acqua-gonçalves-44983321b/" target="_blank">
                     <button class="btn" id="linkedin">
                         <i class="fa-brands fa-linkedin-in icon"></i>
                     </button>
                 </a>
-                <a href="https://github.com/tiagoadag1203">
+                <a href="https://github.com/tiagoadag1203" target="_blank">
                     <button class="btn" id="git">
                         <i class="fa-brands fa-github icon"></i>
                     </button>
                 </a>
-                <a href="curriculo.pdf" download="Tiago Augusto">
+                <a href="https://foregoing-aunt-cc3.notion.site/Tiago-Augusto-Dal-Acqua-Gon-alves-f4267f47a71744078bff5948ba9b84e3?pvs=4" target="_blank">
                     <button class="btn" id="curriculo">
                         <i class="fa-solid fa-file icon"></i>
                     </button>
@@ -71,6 +71,7 @@
         <section id="sobremim" class="padding flex center column cont desatived">
             <h2>Sobre Mim</h2>
             <div class="img-pessoal flex center">
+                <img src="imgs/tiago.jpg" alt="">
             </div>
             <p class="paragrafo">Meu nome é Tiago e tenho 18 anos. Atualmente, iniciei minha jornada na faculdade cursando
                 ciências da computação. Estou constantemente em busca de aprimorar meus conhecimentos,
@@ -161,12 +162,13 @@
         </section>
 
         <!-- PROJETOS -->
-        
+
         <section id="projetos" class="padding flex center column cont desatived">
             <h2>Projetos</h2>
             <div class="cards flex center wrap">
                 <div id="imc" class="card">
                     <div class="card-image flex center">
+                        <img src="/imgs/imc.png" alt="">
                     </div>
                     <div class="category"> Calculadora IMC </div>
                     <div class="heading">
@@ -182,6 +184,7 @@
                 </div>
                 <div id="portifolio" class="card">
                     <div class="card-image flex center">
+                        <img src="/imgs/portifolio.png">
                     </div>
                     <div class="category"> Este Projeto </div>
                     <div class="heading">
@@ -216,7 +219,7 @@
 
     <!-- RODAPE -->
 
-    <footer id="rodape" class="flex column center padding">
+    <footer id="rodape" class="flex column center">
         <p class="texto-rodape">tiago.adag@gmail.com</p>
         <img src="/imgs/logo2.svg" alt="" id="img-rodape">
     </footer>
@@ -226,4 +229,5 @@
     </button>
 
 </body>
+
 </html>

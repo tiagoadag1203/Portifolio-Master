@@ -9,6 +9,7 @@ html {
     font-family: 'Roboto Mono', monospace;
     transition: all 0.5s ease;
     scroll-behavior: smooth;
+    min-height: 100vh;
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -156,7 +157,6 @@ h2 {
     font-size: 20px;
     color: var(--font-color);
 }
-
 
 
 

@@ -21,12 +21,9 @@
 #projetos .card-image{
     background-position: center;
     background-size: cover;
+    overflow: hidden;
 }
 
-#imc .card-image{
-    background-image: url(/imgs/imc.png);
-}
-
-#portifolio .card-image{
-    background-image: url(/imgs/portifolio.png);
+#projetos .card-image img{
+    width: 100%;
 }

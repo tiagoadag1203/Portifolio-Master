@@ -3,10 +3,9 @@
     animation: myAnim 0.5s;
 }
 
-.img-pessoal{
+.img-pessoal img{
     width: 9rem;
     height: 9rem;
-    background: url("/imgs/tiago.jpg");
     background-size: cover;
     border-radius: 100%;
 }
