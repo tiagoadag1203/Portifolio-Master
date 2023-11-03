@@ -1,5 +1,7 @@
-body{
+#obrigado{
+    min-height: 100vh;
     gap: 3rem;
+    padding: 0 2rem;
 }
 
 .titulo{
@@ -7,7 +9,7 @@ body{
     line-height: 1.2;
     text-transform: uppercase;
     color: var(--font-color);
-    font-size: 7rem;
+    font-size: 4rem;
     text-align: center;
     background: linear-gradient(45deg, var(--roxo), var(--font-color), var(--roxo));
     animation: degrade 6s linear infinite;
@@ -24,6 +26,7 @@ body{
         background-position: 400%;
     }
 }
+
 #voltar{
     background-color: var(--bg3);
     padding: 10px;
@@ -38,4 +41,11 @@ body{
 #voltar:hover{
     background-color: var(--roxo);
     color: white;
+}
+
+
+@media (min-width:700px){
+    .titulo{
+        font-size: 6rem;
+    }
 }
