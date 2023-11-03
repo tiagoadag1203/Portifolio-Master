@@ -2,3 +2,7 @@
     animation: myAnim 0.5s;
     gap: 2rem;
 }
+
+#experiencia .card-image{
+    height: 170px;
+}
