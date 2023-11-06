@@ -14,16 +14,6 @@
 }
 
 .link-projeto svg{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--font-color);
-}
-
-#projetos .card-image{
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
-}
-
-#projetos .card-image img{
-    width: 100%;
 }

@@ -37,6 +37,7 @@ html {
     background-color: var(--bg2);
     border-radius: 30px;
     margin: 2rem;
+    max-width: 70%;
 }
 
 .paragrafo {
@@ -93,20 +94,22 @@ h2 {
 .card {
     background-color: var(--bg2);
     max-width: 300px;
-    height: auto;
+    min-height: 250px;
     border: 3px solid var(--bg3);
     border-radius: 20px;
     padding: .5rem;
 }
 
-.card-image {
-
+.card-image{
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
     border-radius: 12px;
+    max-height: 170px;
 }
 
-.card-image img {
-    width: 10rem;
-    filter: drop-shadow(0px 0px 0.5px #fff);
+.card-image img{
+    width: 100%;
 }
 
 .category {
@@ -136,6 +139,15 @@ h2 {
     display: flex;
 }
 
+@media (min-width: 700px){
+    .card{
+        min-height: 300px;
+    }
+}
+
+
+
+/* BOTAO FLUTUANTE */
 
 .bnt-flutuante {
     position: fixed;
