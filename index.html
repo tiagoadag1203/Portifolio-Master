@@ -28,7 +28,7 @@
 <body>
     <header id="navbar" class="flex center padding">
         <div id="btns-menu" class="flex center row wrap">
-            <button class="btn btn-menu" onclick="openTab('apresentacao')"><i class="fa-solid fa-house"></i><span> Home</span></button>
+            <button class="btn btn-menu ativo" onclick="openTab('apresentacao')"><i class="fa-solid fa-house"></i><span> Home</span></button>
             <button class="btn btn-menu" onclick="openTab('sobremim')"><i class="fa-solid fa-user"></i><span> Sobre Mim</span></button>
             <button class="btn btn-menu" onclick="openTab('skills')"><i class="fa-solid fa-laptop-code"></i><span> Skills</span></button>
             <button class="btn btn-menu" onclick="openTab('experiencia')"><i class="fa-solid fa-briefcase"></i><span> Exepriência</span></button>
@@ -209,9 +209,9 @@
             <form action="https://api.staticforms.xyz/submit" method="POST" class="forms flex center column">
                 <input type="hidden" name="accessKey" value="6b748992-b0e6-4774-a4c4-d268108e85cb">
                 <input type="hidden" name="redirectTo" value="https://portifolio-master-one.vercel.app/agradecimento.html">
-                <input type="text" name="name" placeholder="Nome">
-                <input type="email" name="email" id="email" placeholder="E-mail">
-                <textarea name="message" id="texto" rows="5" placeholder="Comentário"></textarea>
+                <input type="text" name="name" placeholder="Nome" required>
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+                <textarea name="message" id="texto" rows="5" placeholder="Comentário" required></textarea>
                 <button type="submit" class="btn-submit"><span>Enviar</span></button>
             </form>
         </section>
