@@ -2,36 +2,43 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="334.62366"
-   height="330.64008"
-   viewBox="0 0 334.62366 330.64008"
+   width="106.46362"
+   height="81.909088"
+   viewBox="0 0 106.46362 81.909088"
    version="1.1"
-   id="svg5"
-   xml:space="preserve"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   id="svg1"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
-     id="namedview7"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.24705882"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0"
-     inkscape:pagecheckerboard="false"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="px"
-     showgrid="false" /><defs
-     id="defs2" /><g
-     id="g1606"
-     transform="matrix(3.9836152,0,0,3.9836152,-56.828918,118.97286)"
-     style="fill:none"><path
-       d="m 14.265664,-29.865549 h 65.000001 c 10.4934,0 19,8.5066 19,19 v 0 H 33.265664 c -10.4934,0 -19,-8.5066 -19,-19 z"
-       fill="#000000"
-       id="path1498"
-       inkscape:export-filename="path1498.png"
-       inkscape:export-xdpi="2000"
-       inkscape:export-ydpi="2000" /><path
-       d="m 45.265664,53.134451 v -66 h 21 v 46 c 0,11.0457 -8.9543,20 -20,20 z"
-       fill="#000000"
-       id="path1500" /></g></svg>
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="106.46359"
+       height="81.909096"
+       patternTransform="translate(2701.4217,412.28853)"
+       preserveAspectRatio="xMidYMid"
+       id="pattern1">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:119.448px;font-family:Honess;-inkscape-font-specification:'Honess, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#df2727;stroke-width:1.48;stroke-linecap:square;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="-0.19318748"
+         y="81.285744"
+         id="text1"><tspan
+           id="tspan1"
+           x="-0.19318748"
+           y="81.285744"
+           style="stroke:#df2727;stroke-width:1.48;stroke-linecap:square;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">T</tspan></text>
+    </pattern>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-2701.4216,-412.28854)">
+    <rect
+       style="fill:url(#pattern1);stroke:none"
+       width="106.46359"
+       height="81.909096"
+       x="2701.4216"
+       y="412.28854"
+       id="rect1" />
+  </g>
+</svg>

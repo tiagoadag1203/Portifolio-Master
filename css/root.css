@@ -5,7 +5,7 @@
     --bg-transparent: #ffffff7a;
     --bg-transparent2: #d8d7d77a;
     --font-color: rgb(92, 92, 92);
-    --roxo: #8198ff;
+    --roxo: #ff2020;
     --sombra: rgba(0, 0, 0, 0.479);
 }
 
@@ -22,12 +22,12 @@
 } */
 
 .dark{
-    --bg: #191922;
-    --bg2: #282838;
-    --bg3: #333347;
+    --bg: #181818;
+    --bg2: #222222;
+    --bg3: #2c2c2c;
     --bg-transparent: #ffffff7a;
     --bg-transparent2: #d8d7d77a;
     --font-color: rgb(211, 211, 211);
-    --roxo: #8198ff;
+    --roxo: #ff2020;
     --sombra: rgba(0, 0, 0, 0.479);
 }
