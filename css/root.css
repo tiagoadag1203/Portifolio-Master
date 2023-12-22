@@ -5,7 +5,7 @@
     --bg-transparent: #ffffff7a;
     --bg-transparent2: #d8d7d77a;
     --font-color: rgb(92, 92, 92);
-    --roxo: #ff2020;
+    --primary-color: #ff2020;
     --sombra: rgba(0, 0, 0, 0.479);
 }
 
@@ -28,6 +28,6 @@
     --bg-transparent: #ffffff7a;
     --bg-transparent2: #d8d7d77a;
     --font-color: rgb(211, 211, 211);
-    --roxo: #ff2020;
+    --primary-color: #ff2020;
     --sombra: rgba(0, 0, 0, 0.479);
 }

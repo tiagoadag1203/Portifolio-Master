@@ -35,7 +35,7 @@
 }
 
 .progresso {
-    background: var(--roxo);
+    background: var(--primary-color);
     height: 10px;
     border-radius: 10px;
 }

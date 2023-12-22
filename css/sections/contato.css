@@ -30,11 +30,11 @@
 }
 
 .forms input:focus {
-    box-shadow: 0px 0px 0px 4px var(--roxo);
+    box-shadow: 0px 0px 0px 4px var(--primary-color);
 }
 
 .forms textarea:focus {
-    box-shadow: 0px 0px 0px 4px var(--roxo);
+    box-shadow: 0px 0px 0px 4px var(--primary-color);
 }
 
 .btn-submit{
@@ -50,6 +50,6 @@
 }
 
 .btn-submit:hover{
-    background-color: var(--roxo);
+    background-color: var(--primary-color);
     color: white;
 }
