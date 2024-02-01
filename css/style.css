@@ -82,6 +82,7 @@ h2 {
     border-radius: 10px;
     transition: 0.3s;
     color: var(--font-color);
+    fill: var(--font-color);
 }
 
 

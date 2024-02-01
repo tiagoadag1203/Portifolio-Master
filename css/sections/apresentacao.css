@@ -1,6 +1,6 @@
 #apresentacao{
     gap: 3rem;
-    animation: myAnim 0.5s
+    animation: myAnim 1s;
 }
 
 .titulo{

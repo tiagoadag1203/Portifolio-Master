@@ -1,4 +1,4 @@
 #certificados{
-    animation: myAnim 0.5s;
     gap: 2rem;
+    animation: myAnim 1s;
 }
