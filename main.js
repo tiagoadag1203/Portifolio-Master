@@ -39,3 +39,18 @@ if (localStorage.getItem("theme") === "dark") {
     var element = document.documentElement;
     element.classList.add("dark");
 }
+
+
+function atualizaridade(){
+    var dataNasc = new Date (2005, 2, 12);
+    var dataAtual = new Date ();
+    var dataDiferenca = dataAtual.getTime() - dataNasc.getTime();
+    var idade = new Date(dataDiferenca).getUTCFullYear() - 1970;
+
+    document.getElementById("idade").textContent = idade;
+
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    atualizaridade();
+});
