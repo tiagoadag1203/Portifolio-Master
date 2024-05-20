@@ -54,3 +54,10 @@ function atualizaridade(){
 document.addEventListener("DOMContentLoaded", function() {
     atualizaridade();
 });
+
+
+window.onload = function() {
+    setTimeout(function() {
+        document.getElementById('splash').style.display = 'none';
+    }, 4000);
+};
