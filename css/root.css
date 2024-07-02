@@ -22,9 +22,9 @@
 } */
 
 .dark{
-    --bg: #101010;
-    --bg2: #181818;
-    --bg3: #202020;
+    --bg: #000000;
+    --bg2: #0a0a0a;
+    --bg3: #101010;
     --bg-transparent: #ffffff7a;
     --bg-transparent2: #d8d7d77a;
     --font-color: rgb(211, 211, 211);
